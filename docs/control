@@ -1,0 +1,36 @@
+Source: bulletml
+Priority: extra
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders: Miriam Ruiz <little_miry@yahoo.es>, Peter De Wachter <pdewacht@gmail.com>
+Build-Depends: debhelper (>= 5), quilt, bison
+Standards-Version: 3.8.1
+Section: libs
+Vcs-Svn: svn://svn.debian.org/svn/pkg-games/packages/trunk/bulletml/
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-games/packages/trunk/bulletml/?op=log
+Homepage: http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/index_e.html
+DM-Upload-Allowed: yes
+
+Package: libbulletml-dev
+Section: libdevel
+Architecture: any
+Depends: libbulletml0d2 (= ${binary:Version})
+Description: C++ library to handle BulletML easily - development files
+ BulletML is the Bullet Markup Language. BulletML can describe the barrage of
+ bullets in shooting games.
+ .
+ This package includes the files needed for the development of programs that
+ use this library.
+
+Package: libbulletml0d2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: C++ library to handle BulletML easily - runtime library
+ BulletML is the Bullet Markup Language. BulletML can describe the barrage of
+ bullets in shooting games.
+ .
+ There are many advantages for using BulletML:
+  * BulletML can describe the complicated barrage of bullets in recent
+   shooting games easily
+  * BulletML demo applet is available. Write BulletML document, and check it
+   on this applet
+  * BulletML is XML-based language. It offers data portability and reusability

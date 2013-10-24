@@ -1,0 +1,83 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+CFLAGS = -g -Wall -ansi -pedantic
+
+ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
+	CFLAGS += -O0
+else
+	CFLAGS += -O2
+endif
+
+patch: patch-stamp
+patch-stamp:
+	dh_testdir
+	$(MAKE) -f /usr/share/quilt/quilt.make patch
+	rm -f src/calc.cpp #needs to be regenerated from src/calc.yy
+	touch $@
+
+build: build-stamp
+build-stamp: patch-stamp 
+	dh_testdir
+	rm -f src/*.o src/*/*.o
+	$(MAKE) -C src CFLAGS="$(CFLAGS)" CXXFLAGS="$(CFLAGS)" libbulletml.a
+	rm -f src/*.o src/*/*.o
+	$(MAKE) -C src CFLAGS="$(CFLAGS) -fPIC -fpic" CXXFLAGS="$(CFLAGS) -fPIC -fpic" \
+		LDFLAGS="-Wl,-z,defs" libbulletml.so
+	touch $@
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp patch-stamp
+	$(MAKE) -C src clean
+	rm -f src/*.so src/*.so.* src/*.o
+	rm -f src/bulletml.d
+	rm -f src/calc.cpp
+	$(MAKE) -f /usr/share/quilt/quilt.make unpatch
+	dh_clean 
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	dh_installdirs
+	#$(MAKE) -C src DESTDIR=$(CURDIR)/debian/tmp install
+
+# Build architecture-independent files here.
+binary-indep: build install
+
+# Build architecture-dependent files here.
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs 
+	dh_installdocs
+	dh_installexamples
+	dh_install
+	dh_installman
+	dh_link
+	dh_strip
+	dh_compress
+	dh_fixperms
+	dh_makeshlibs
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+get-orig-source:
+	wget http://shinh.skr.jp/libbulletml/libbulletml-0.0.6.tar.bz2
+	wget http://shinh.skr.jp/d/d_cpp.tar.bz2
+	tar xvfj libbulletml-0.0.6.tar.bz2
+	cd bulletml && tar xvfj ../d_cpp.tar.bz2
+	rm -rf bulletml/src/boost/
+	tar cvfz ../bulletml_0.0.6.orig.tar.gz bulletml
+	rm -r bulletml
+	rm d_cpp.tar.bz2 libbulletml-0.0.6.tar.bz2
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install patch get-orig-source

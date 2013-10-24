@@ -1,0 +1,3424 @@
+--- bulletml-0.0.6.orig/debian/docs
++++ bulletml-0.0.6/debian/docs
+@@ -0,0 +1,3 @@
++README
++README.bulletml
++README.en
+--- bulletml-0.0.6.orig/debian/copyright
++++ bulletml-0.0.6/debian/copyright
+@@ -0,0 +1,175 @@
++This package was debianized by Miriam Ruiz <little_miry@yahoo.es> on
++Mon, 27 Aug 2007 19:48:05 +0000.
++
++libBulletML was downloaded from:
++    http://shinh.skr.jp/libbulletml/index_en.html
++
++d_cpp was downloaded from:
++    http://shinh.skr.jp/d/cpplink.html
++
++Documentation for BulletML (debian/doc) has been downloaded from:
++    http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/index_e.html
++
++Upstream Author: 
++
++    shinichiro.h <hamaji@nii.ac.jp> ( http://shinh.skr.jp/ )
++
++Copyright: 
++
++    bulletml:   Copyright ﾂｩ 2003, shinichiro.h
++    tinyxml:    Copyright ﾂｩ 2000, Lee Thomason (www.grinninglizard.com)
++    yggdrasil:  Copyright ﾂｩ 2002, Wraith
++    calc.cpp:   Copyright ﾂｩ 1984, 1989, 1990 Free Software Foundation, Inc.
++    sstream-:   Copyright ﾂｩ 2000, Free Software Foundation
++    debian/doc: Copyright ﾂｩ 2001. Kenta Cho
++
++License: 
++
++    Redistribution and use in source and binary forms, with or without
++    modification, are permitted provided that the following conditions are
++    met:
++
++    * Redistributions of source code must retain the above copyright
++      notice, this list of conditions and the following disclaimer.
++    * Redistributions in binary form must reproduce the above
++      copyright notice, this list of conditions and the following
++      disclaimer in the documentation and/or other materials provided
++      with the distribution.
++    * The name of the author may not be used to endorse or promote
++      products derived from this software without specific prior
++      written permission.
++
++    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
++    "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
++    LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
++    A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
++    OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
++    SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
++    LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
++    DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
++    THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
++    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
++    OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
++
++
++TinyXml:
++
++    TinyXml is released under the zlib license:
++
++    This software is provided 'as-is', without any express or implied 
++    warranty. In no event will the authors be held liable for any 
++    damages arising from the use of this software.
++
++    Permission is granted to anyone to use this software for any 
++    purpose, including commercial applications, and to alter it and 
++    redistribute it freely, subject to the following restrictions:
++
++    1. The origin of this software must not be misrepresented; you must 
++    not claim that you wrote the original software. If you use this 
++    software in a product, an acknowledgment in the product documentation 
++    would be appreciated but is not required.
++
++    2. Altered source versions must be plainly marked as such, and 
++    must not be misrepresented as being the original software.
++
++    3. This notice may not be removed or altered from any source 
++    distribution.
++
++
++yggdrasil:
++
++    License text: http://tricklib.com/license.htm
++
++    縺薙�ｮ繧ｵ繧､繝医〒蜈ｬ髢九＠縺ｦ縺�繧九Δ繧ｸ繝･繝ｼ繝ｫ遲峨�ｮ繝ｩ繧､繧ｻ繝ｳ繧ｹ縺ｫ縺､縺�縺ｦ
++
++
++    繝阪ャ繝井ｸ翫↓繧｢繝�繝励＠縺溘ｂ縺ｮ縺ｫ縺､縺�縺ｦ繧｢繝ｬ繧ｳ繝ｬ荳ｻ蠑ｵ縺吶ｋ縺ｮ縺ｯ繝翫Φ繧ｻ繝ｳ繧ｹ縺ｪ縺薙→縺縺ｨ諤昴▲縺ｦ縺�縺ｾ縺吶ｓ縺ｧ縲√∪繧九∪繧九ヱ繧ｯ縺｣縺ｦ縲檎ｧ√′菴懊ｊ縺ｾ縺励◆縺��ｼ√阪▲縺ｦ荳ｻ蠑ｵ縺吶ｋ繧医≧縺ｪ髱槫ｸｸ隴倥↑縺薙→繧帝勁縺代�ｰ縲∝渕譛ｬ逧�縺ｫ髱槫膚逕ｨ繝ｻ蝠�逕ｨ繧貞撫繧上★縺ｫ縺碑�ｪ逕ｱ縺ｫ縺昴�ｮ縺ｾ縺ｾ縺ゅｋ縺�縺ｯ蠢�隕√↓蠢懊§縺ｦ縺碑�ｪ霄ｫ縺ｧ菫ｮ豁｣繧呈命縺励◆繧ゅ�ｮ繧偵＃蛻ｩ逕ｨ縺上□縺輔＞縲ゅ∪縺溘√◎縺ｮ髫帙↓縺泌茜逕ｨ縺ｫ縺ｪ縺｣縺溘Δ繧ｸ繝･繝ｼ繝ｫ遲峨ｒ蛻ｩ逕ｨ縺励※縺�繧九％縺ｨ繧呈�手ｨ倥☆繧句ｿ�隕√↑縺ｩ繧ゅ≠繧翫∪縺帙ｓ縺励∝�埼�榊ｸ�縺ｪ縺ｩ繧ゅ＃閾ｪ逕ｱ縺ｫ縺励※鬆ゅ＞縺ｦ讒九＞縺ｾ縺帙ｓ縺ｧ縺吶√�ｯ縺�縲�
++
++    ...縺溘□縺励√＃蛻ｩ逕ｨ縺ｯ閾ｪ蟾ｱ雋ｬ莉ｻ縺ｫ縺翫＞縺ｦ縺企｡倥＞縺励∪縺吶ゅ∪縺溘∝挨騾斐Λ繧､繧ｻ繝ｳ繧ｹ縺ｫ髢｢縺励※譏手ｨ倥＠縺ｦ縺ゅｋ蝣ｴ蜷医�ｯ縺昴■繧峨ｒ蜆ｪ蜈医☆繧九ｂ縺ｮ縺ｨ縺励∪縺吶〒縺吶�
++
++    Translation:
++
++    "It is my belief that it is a nonsense to claim a license on a product
++    which is released on the web, but as long as proper attribution is done
++    to the original author, you can use for commercial or non-commercial
++    purposes, with or without modifications. There is no need to advertise
++    the use of this module, and reditribution is allowed. However, please use
++    at your own risk. Also, if there are license statements, they take
++    precedence"
++
++
++sstream-:
++
++    This file is part of the GNU IO Library. This library is free
++    software; you can redistribute it and/or modify it under the
++    terms of the GNU General Public License as published by the
++    Free Software Foundation; either version 2, or (at your option)
++    any later version.
++
++    This library is distributed in the hope that it will be useful,
++    but WITHOUT ANY WARRANTY; without even the implied warranty of
++    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++    GNU General Public License for more details.
++
++    You should have received a copy of the GNU General Public License
++    along with this library; if not, write to the Free Software
++    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
++
++On Debian systems, the complete text of the GNU General
++Public License can be found in `/usr/share/common-licenses/GPL'.
++
++
++calc.cpp:
++
++    Skeleton output parser for bison
++
++    This program is free software; you can redistribute it and/or modify
++    it under the terms of the GNU General Public License as published by
++    the Free Software Foundation; either version 2, or (at your option)
++    any later version.
++
++    This program is distributed in the hope that it will be useful,
++    but WITHOUT ANY WARRANTY; without even the implied warranty of
++    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++    GNU General Public License for more details.
++
++    You should have received a copy of the GNU General Public License
++    along with this library; if not, write to the Free Software
++    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
++
++    As a special exception, when this file is copied by Bison into a
++    Bison output file, you may use that output file without restriction.
++    This special exception was added by the Free Software Foundation
++    in version 1.24 of Bison.
++
++On Debian systems, the complete text of the GNU General
++Public License can be found in `/usr/share/common-licenses/GPL'.
++
++
++debian/doc: 
++
++    Redistribution and use in source and binary forms, 
++    with or without modification, are permitted provided that 
++    the following conditions are met: 
++
++     1. Redistributions of source code must retain the above copyright notice, 
++        this list of conditions and the following disclaimer. 
++
++     2. Redistributions in binary form must reproduce the above copyright notice, 
++        this list of conditions and the following disclaimer in the documentation 
++        and/or other materials provided with the distribution. 
++
++    THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, 
++    INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND 
++    FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL 
++    THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
++    SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, 
++    PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; 
++    OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
++    WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR 
++    OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
++    ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
++
++
++The Debian packaging is ﾂｩ 2007, Miriam Ruiz <little_miry@yahoo.es> and
++is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
+--- bulletml-0.0.6.orig/debian/changelog
++++ bulletml-0.0.6/debian/changelog
+@@ -0,0 +1,43 @@
++bulletml (0.0.6-4) unstable; urgency=low
++
++  * Bulletml depended on Boost just to get boost::shared_ptr. Patched it to
++    use std::tr1::shared_ptr instead, so this dependency can be dropped.
++    + This caused an API change (not affecting any package in Debian), so
++      bumped the soname.
++  * Added a watch file.
++  * Bumped Standards-Version to 3.8.1.
++    + debian/rules: Renamed 'configure' target to 'patch'.
++
++ -- Peter De Wachter <pdewacht@gmail.com>  Wed, 03 Jun 2009 21:54:14 +0200
++
++bulletml (0.0.6-3) unstable; urgency=low
++
++  [ Miriam Ruiz ]
++  * Added libboost-dev as a dependency for libbulletml-dev.
++    Closes: #443718. Closes: #444452.
++  * Added DM-Upload-Allowed tag to control to allow uploads from Debian
++    Maintainers.
++
++  [ Jon Dowland ]
++  * Added Homepage: control field to source stanza.
++
++  [ Peter De Wachter ]
++  * Added missing includes for GCC 4.3. Added bison as a build-dependency,
++    as a parser needs to be rebuilt. Closes: #455131.
++  * The XS-Vcs fields are now official, removed the prefix.
++
++ -- Peter De Wachter <pdewacht@gmail.com>  Thu, 31 Jan 2008 21:26:01 +0100
++
++bulletml (0.0.6-2) unstable; urgency=low
++
++  * Install C++ header files.
++  * Added documentation (debian/doc).
++
++ -- Miriam Ruiz <little_miry@yahoo.es>  Wed, 29 Aug 2007 20:03:21 +0000
++
++bulletml (0.0.6-1) unstable; urgency=low
++
++  * Initial release.
++
++ -- Miriam Ruiz <little_miry@yahoo.es>  Mon, 27 Aug 2007 19:48:05 +0000
++
+--- bulletml-0.0.6.orig/debian/compat
++++ bulletml-0.0.6/debian/compat
+@@ -0,0 +1 @@
++5
+--- bulletml-0.0.6.orig/debian/watch
++++ bulletml-0.0.6/debian/watch
+@@ -0,0 +1,3 @@
++version=3
++
++http://shinh.skr.jp/libbulletml/index_en.html libbulletml-([0-9.]+).tar.bz2
+--- bulletml-0.0.6.orig/debian/rules
++++ bulletml-0.0.6/debian/rules
+@@ -0,0 +1,83 @@
++#!/usr/bin/make -f
++
++# Uncomment this to turn on verbose mode.
++#export DH_VERBOSE=1
++
++CFLAGS = -g -Wall -ansi -pedantic
++
++ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
++	CFLAGS += -O0
++else
++	CFLAGS += -O2
++endif
++
++patch: patch-stamp
++patch-stamp:
++	dh_testdir
++	$(MAKE) -f /usr/share/quilt/quilt.make patch
++	rm -f src/calc.cpp #needs to be regenerated from src/calc.yy
++	touch $@
++
++build: build-stamp
++build-stamp: patch-stamp 
++	dh_testdir
++	rm -f src/*.o src/*/*.o
++	$(MAKE) -C src CFLAGS="$(CFLAGS)" CXXFLAGS="$(CFLAGS)" libbulletml.a
++	rm -f src/*.o src/*/*.o
++	$(MAKE) -C src CFLAGS="$(CFLAGS) -fPIC -fpic" CXXFLAGS="$(CFLAGS) -fPIC -fpic" \
++		LDFLAGS="-Wl,-z,defs" libbulletml.so
++	touch $@
++
++clean:
++	dh_testdir
++	dh_testroot
++	rm -f build-stamp patch-stamp
++	$(MAKE) -C src clean
++	rm -f src/*.so src/*.so.* src/*.o
++	rm -f src/bulletml.d
++	rm -f src/calc.cpp
++	$(MAKE) -f /usr/share/quilt/quilt.make unpatch
++	dh_clean 
++
++install: build
++	dh_testdir
++	dh_testroot
++	dh_clean -k
++	dh_installdirs
++	#$(MAKE) -C src DESTDIR=$(CURDIR)/debian/tmp install
++
++# Build architecture-independent files here.
++binary-indep: build install
++
++# Build architecture-dependent files here.
++binary-arch: build install
++	dh_testdir
++	dh_testroot
++	dh_installchangelogs 
++	dh_installdocs
++	dh_installexamples
++	dh_install
++	dh_installman
++	dh_link
++	dh_strip
++	dh_compress
++	dh_fixperms
++	dh_makeshlibs
++	dh_installdeb
++	dh_shlibdeps
++	dh_gencontrol
++	dh_md5sums
++	dh_builddeb
++
++get-orig-source:
++	wget http://shinh.skr.jp/libbulletml/libbulletml-0.0.6.tar.bz2
++	wget http://shinh.skr.jp/d/d_cpp.tar.bz2
++	tar xvfj libbulletml-0.0.6.tar.bz2
++	cd bulletml && tar xvfj ../d_cpp.tar.bz2
++	rm -rf bulletml/src/boost/
++	tar cvfz ../bulletml_0.0.6.orig.tar.gz bulletml
++	rm -r bulletml
++	rm d_cpp.tar.bz2 libbulletml-0.0.6.tar.bz2
++
++binary: binary-indep binary-arch
++.PHONY: build clean binary-indep binary-arch binary install patch get-orig-source
+--- bulletml-0.0.6.orig/debian/control
++++ bulletml-0.0.6/debian/control
+@@ -0,0 +1,36 @@
++Source: bulletml
++Priority: extra
++Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
++Uploaders: Miriam Ruiz <little_miry@yahoo.es>, Peter De Wachter <pdewacht@gmail.com>
++Build-Depends: debhelper (>= 5), quilt, bison
++Standards-Version: 3.8.1
++Section: libs
++Vcs-Svn: svn://svn.debian.org/svn/pkg-games/packages/trunk/bulletml/
++Vcs-Browser: http://svn.debian.org/wsvn/pkg-games/packages/trunk/bulletml/?op=log
++Homepage: http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/index_e.html
++DM-Upload-Allowed: yes
++
++Package: libbulletml-dev
++Section: libdevel
++Architecture: any
++Depends: libbulletml0d2 (= ${binary:Version})
++Description: C++ library to handle BulletML easily - development files
++ BulletML is the Bullet Markup Language. BulletML can describe the barrage of
++ bullets in shooting games.
++ .
++ This package includes the files needed for the development of programs that
++ use this library.
++
++Package: libbulletml0d2
++Architecture: any
++Depends: ${shlibs:Depends}, ${misc:Depends}
++Description: C++ library to handle BulletML easily - runtime library
++ BulletML is the Bullet Markup Language. BulletML can describe the barrage of
++ bullets in shooting games.
++ .
++ There are many advantages for using BulletML:
++  * BulletML can describe the complicated barrage of bullets in recent
++   shooting games easily
++  * BulletML demo applet is available. Write BulletML document, and check it
++   on this applet
++  * BulletML is XML-based language. It offers data portability and reusability
+--- bulletml-0.0.6.orig/debian/libbulletml0d2.install
++++ bulletml-0.0.6/debian/libbulletml0d2.install
+@@ -0,0 +1 @@
++src/lib*.so.* usr/lib/
+--- bulletml-0.0.6.orig/debian/libbulletml-dev.install
++++ bulletml-0.0.6/debian/libbulletml-dev.install
+@@ -0,0 +1,7 @@
++src/bulletml.d usr/include/d/
++src/*.h usr/include/bulletml/
++src/tinyxml/*.h usr/include/bulletml/tinyxml/
++src/lib*.a usr/lib/
++src/lib*.so usr/lib/
++#src/*.la usr/lib/
++debian/doc/* usr/share/doc/bulletml
+--- bulletml-0.0.6.orig/debian/doc/bulletml_ref.html
++++ bulletml-0.0.6/debian/doc/bulletml_ref.html
+@@ -0,0 +1,511 @@
++<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
++<html lang="jp">
++<head>
++ <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
++ <title>BulletML Reference</title>
++</head>
++
++<body bgcolor="#ffffff" text="#111111" 
++      link="#006688" vlink="#004466" alink="#000000"
++      background="../gif/ababack000520.gif">
++
++<table border=0 width="100%" bgcolor="#bbaaee" summary="page title">
++<tr><td>
++<strong>BulletML Reference ver. 0.21</strong>
++</td><td align=right>
++(c) 長 健太(ABA."Saba")
++</td><td align=right>
++<a href="http://www.asahi-net.or.jp/~cs8k-cyu/"><strong>ABA Games</strong></a>
++</td></tr>
++</table>
++
++<p>
++BulletMLの簡易リファレンスです。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;bulletml&gt; - Defines the BulletML's body</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - type = (none | vertical | horizontal)</p>
++<li><p><b>Contents</b> - (bullet | action | fire)*</p>
++</ul>
++
++<p>
++BulletML本体を定義します。
++
++<p>
++type属性は、この弾幕が縦スクロールシューティング用か、
++横スクロールシューティング用かを規定します。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;bullet&gt; - Defines attributes of a bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - label = STRING</p>
++<li><p><b>Contents</b> - direction?, speed?, (action | actionRef)*</p>
++<li><p><b>Example</b></p>
++<pre>
++&lt;bullet label="downAccel"&gt;
++&lt;direction&gt;270&lt;/direction&gt;
++&lt;speed&gt;2&lt;/speed&gt;
++&lt;action&gt;
++&lt;accel&gt;
++ &lt;vertical&gt;3&lt;/vertical&gt;
++ &lt;term&gt;120&lt;/term&gt;
++&lt;/accel&gt;
++&lt;/action&gt;
++&lt;/bullet&gt;
++</pre>
++</ul>
++
++<p>
++弾の方向、速度およびアクションを定義します。
++
++<p>
++ラベル属性でラベル名をつけることができます。
++ラベル付けされたbullet要素は、bulletRef要素によって参照されます。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;action&gt; - Defines the action of bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - label = STRING</p>
++<li><p><b>Contents</b> - (repeat | fire | fireRef | changeSpeed | changeDirection | accel | wait | vanish | action | actionRef)*</p>
++<li><p><b>Example</b></p>
++<pre>
++&lt;action&gt;
++&lt;changeSpeed&gt;
++ &lt;speed&gt;0&lt;/speed&gt;
++ &lt;term&gt;60&lt;/term&gt;
++&lt;/changeSpeed&gt;
++&lt;wait&gt;60&lt;/wait&gt;
++&lt;fire&gt;&lt;bullet/&gt;&lt;/fire&gt;
++&lt;fire&gt;
++ &lt;direction type="absolute"&gt;330+$rand*25&lt;/direction&gt;
++ &lt;bulletRef label="downAccel"/&gt;
++&lt;/fire&gt;
++&lt;vanish/&gt;
++&lt;/action&gt;
++</pre>
++</ul>
++
++<p>
++弾のアクションを定義します。
++ラベル付けされたaction要素は、actionRef要素によって参照されます。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;fire&gt; - Fires a bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - label = STRING</p>
++<li><p><b>Contents</b> - direction?, speed?, (bullet | bulletRef)</p>
++<li><p><b>Example</b></p>
++<pre>
++&lt;fire&gt;
++ &lt;direction type="absolute"&gt;270&lt;/direction&gt;
++ &lt;speed&gt;2&lt;/speed&gt;
++ &lt;bulletRef label="rocket"/&gt;
++&lt;/fire&gt;
++</pre>
++</ul>
++
++<p>
++弾を&lt;direction&gt;度方向に速度&lt;speed&gt;で撃ちます。
++ラベル付けされたfire要素は、fireRef要素によって参照されます。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;changeDirection&gt; - Changes the direction of bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - direction, term</p>
++</ul>
++
++<p>
++弾の方向を&lt;direction&gt;度に&lt;term&gt;フレームかけて曲げます。
++1フレームは1/60秒です。
++<p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;changeSpeed&gt; - Changes the speed of bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - speed, term</p>
++</ul>
++
++<p>
++弾の速度を&lt;speed&gt;に&lt;term&gt;フレームかけて変えます。
++<p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;accel&gt; - Accelerates a bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - horizontal?, vertical?, term</p>
++</ul>
++
++<p>
++弾を水平方向に&lt;horizontal&gt;、垂直方向に&lt;vertical&gt;、
++&lt;term&gt;フレームかけて加速します。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;wait&gt; - Waits</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++NUMBERフレーム待ちます。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;vanish&gt; - Vanishes a bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<p>
++弾を消します。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;repeat&gt; - Repeats an action</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - times, (action | actionRef)</p>
++<li><p><b>Example</b></p>
++<pre>
++&lt;repeat&gt;
++&lt;times&gt;100&lt;/times&gt;
++&lt;action&gt;
++ &lt;fire&gt;
++  &lt;direction type="absolute"&gt;220+$rand*100&lt;/direction&gt;
++  &lt;bulletRef label="backBurst"/&gt;
++ &lt;/fire&gt;
++ &lt;wait&gt;6&lt;/wait&gt;
++&lt;/action&gt;
++&lt;/repeat&gt;
++</pre>
++</ul>
++
++<p>
++アクションを&lt;times&gt;回繰り返します。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;direction&gt; - Specifies a direction</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - type = (aim | absolute | relative | sequence)</p>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++方向を度単位で指定します。
++
++<p>
++typeが"aim"の場合、自機を狙う方向が0の相対値になります。
++
++<p>
++typeが"absolute"の場合、NUMBERは絶対値（上方向が0で時計回り）です。
++
++<p>
++typeが"relative"の場合、NUMBERはこの弾の方向が0の相対値になります。
++
++<p>
++typeが"sequence"の場合、直前の弾を撃った方向が0の相対値になります。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap><big><b>&lt;speed&gt; - Specifies a speed</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - type = (absolute | relative | sequence)</p>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++速度を指定します。
++
++<p>
++typeが"relative"の場合、
++changeSpeed要素内では現在の弾の速度との相対値、
++それ以外の要素内ではこの弾の速度との相対値です。
++
++<p>
++typeが"sequence"の場合、
++changeSpeed要素内では弾の速度を連続的に変化させ、
++それ以外の要素内では直前の弾の速度との相対値です。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;horizontal&gt; - Specifies the acceleration in a horizontal line</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - type = (absolute | relative | sequence)</p>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++水平方向の弾の加速度を指定します。
++
++<p>
++typeが"relative"の場合、現在の弾の速度との相対値です。
++typeが"sequence"の場合、加速度を連続的に変化させます。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;vertical&gt; - Specifies the acceleration in a vertical line</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - type = (absolute | relative | sequence)</p>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++垂直方向の弾の加速度を指定します。
++
++<p>
++typeが"sequence"の場合、現在の弾の速度との相対値です。
++typeが"sequence"の場合、加速度を連続的に変化させます。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;term&gt; - Specifies a term</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++期間を指定します。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;times&gt; - Specifies the number of times</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++繰り返し回数を指定します。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;bulletRef&gt; - Refers to the bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - label = STRING</p>
++<li><p><b>Contents</b> - param*</p>
++</ul>
++
++<p>
++ラベル付けされたbullet要素を参照します。
++この要素は同名のラベルでラベル付けされたbullet要素と同じに扱われます。
++
++<p>
++参照されたbullet要素内の変数（$1, $2, $3, ...）は、
++&lt;param&gt;要素に指定された数値に置き換えられます。
++（最初に出現したparam要素が$1に、次に出現したparam要素が$2に、...）
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;actionRef&gt; - Refers to the action</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - label = STRING</p>
++<li><p><b>Contents</b> - param*</p>
++</ul>
++
++<p>
++ラベル付けされたaction要素を参照します。
++この要素は同名のラベルでラベル付けされたaction要素と同じに扱われます。
++
++<p>
++参照されたaction要素内の変数は、&lt;param&gt;要素に指定された数値に
++置き換えられます。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;fireRef&gt; - Refers to the fire action</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - label = STRING</p>
++<li><p><b>Contents</b> - param*</p>
++</ul>
++
++<p>
++ラベル付けされたfire要素を参照します。
++この要素は同名のラベルでラベル付けされたfire要素と同じに扱われます。
++
++<p>
++参照されたfire要素内の変数は、&lt;param&gt;要素に指定された数値に
++置き換えられます。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;param&gt; - Specifies the parameter</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++パラメタを指定します。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>STRING - any string</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<p>
++ラベル用文字列です。
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>NUMBER - expression</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Examples</b></p>
++<pre>
++35
++360/16
++0.7 + 0.9*$rand
++180-$rank*20
++(2+$1)*0.3
++</pre>
++</ul>
++
++<p>
++数値を指定するための式です。
++
++<p>
++四則演算と剰余算、括弧、変数（パラメタ用に$1, $2, $3...、
++乱数（0から1までの値）用に$rand、難易度（0から1までの値）用に$rank）
++が使えます。
++</p>
++
++<table border=0 width="100%" bgcolor="#bbaaee" summary="return to top">
++<tr><td>
++■
++</td><td align=right>
++<a href="index.html">BulletMLページにもどる</a>
++</td></tr>
++</table>
++
++</body>
++
++</html>
++
+--- bulletml-0.0.6.orig/debian/doc/readme_e.txt
++++ bulletml-0.0.6/debian/doc/readme_e.txt
+@@ -0,0 +1,76 @@
++BulletML  readme_e.txt
++ver. 0.21
++(C) Kenta Cho(ABA."Saba")
++
++BulletML is the Bullet Markup Language that defines
++the barrage of bullets of shooting games.
++If you want to know more details, please go to:
++
++ABA Games/BulletML
++http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/
++
++
++○ Contents of this archive
++
++This archive includes the RELAX definition of BulletML,
++samples of BulletML and source files of the demo program.
++
++
++○ Acknowledgement 
++
++BulletML is defined by a RELAX grammar.
++Java classes that handle BulletML documents are generated by Relaxer.
++
++RELAX
++http://www.xml.gr.jp/relax/
++
++Relaxer
++http://www.relaxer.org/
++
++
++○ e-mail
++
++If you have any comments, please mail to: 
++
++cs8k-cyu@asahi-net.or.jp.
++
++
++○ History
++
++2001 5/14   ver. 0.2 
++            released.
++2001 6/3    ver. 0.21
++            Attributes of bulletml, direction, speed, vertical and horizontal
++            have changed.
++            Parameters handling bugs in a demo have been fixed.
++            Difficulty setting bar is added.
++
++
++○ License
++
++License
++-------
++
++Copyright 2001 Kenta Cho. All rights reserved. 
++
++Redistribution and use in source and binary forms, 
++with or without modification, are permitted provided that 
++the following conditions are met: 
++
++ 1. Redistributions of source code must retain the above copyright notice, 
++    this list of conditions and the following disclaimer. 
++
++ 2. Redistributions in binary form must reproduce the above copyright notice, 
++    this list of conditions and the following disclaimer in the documentation 
++    and/or other materials provided with the distribution. 
++
++THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, 
++INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND 
++FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL 
++THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
++SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, 
++PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; 
++OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
++WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR 
++OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
++ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+--- bulletml-0.0.6.orig/debian/doc/bulletml.dtd
++++ bulletml-0.0.6/debian/doc/bulletml.dtd
+@@ -0,0 +1,54 @@
++<!-- Generated by Relaxer 0.13 -->
++<!-- Sun Jun 03 09:44:38 JST 2001 -->
++
++<!ELEMENT vertical (#PCDATA)>
++<!ATTLIST vertical type (absolute|relative|sequence) "absolute">
++
++<!ELEMENT fireRef (param*)>
++<!ATTLIST fireRef label CDATA #REQUIRED>
++
++<!ELEMENT changeDirection (direction, term)>
++
++<!ELEMENT bulletml (bullet | fire | action)*>
++<!ATTLIST bulletml xmlns CDATA #IMPLIED>
++<!ATTLIST bulletml type (none|vertical|horizontal) "none">
++
++<!ELEMENT param (#PCDATA)>
++
++<!ELEMENT actionRef (param*)>
++<!ATTLIST actionRef label CDATA #REQUIRED>
++
++<!ELEMENT repeat (times, (action | actionRef))>
++
++<!ELEMENT accel (horizontal?, vertical?, term)>
++
++<!ELEMENT times (#PCDATA)>
++
++<!ELEMENT term (#PCDATA)>
++
++<!ELEMENT wait (#PCDATA)>
++
++<!ELEMENT action (changeDirection | accel | vanish | changeSpeed | repeat | wait | (fire | fireRef) | (action | actionRef))*>
++<!ATTLIST action label CDATA #IMPLIED>
++
++<!ELEMENT vanish (#PCDATA)>
++
++<!ELEMENT speed (#PCDATA)>
++<!ATTLIST speed type (absolute|relative|sequence) "absolute">
++
++<!ELEMENT horizontal (#PCDATA)>
++<!ATTLIST horizontal type (absolute|relative|sequence) "absolute">
++
++<!ELEMENT bullet (direction?, speed?, (action | actionRef)*)>
++<!ATTLIST bullet label CDATA #IMPLIED>
++
++<!ELEMENT direction (#PCDATA)>
++<!ATTLIST direction type (aim|absolute|relative|sequence) "aim">
++
++<!ELEMENT changeSpeed (speed, term)>
++
++<!ELEMENT fire (direction?, speed?, (bullet | bulletRef))>
++<!ATTLIST fire label CDATA #IMPLIED>
++
++<!ELEMENT bulletRef (param*)>
++<!ATTLIST bulletRef label CDATA #REQUIRED>
+--- bulletml-0.0.6.orig/debian/doc/bulletml_ref_e.html
++++ bulletml-0.0.6/debian/doc/bulletml_ref_e.html
+@@ -0,0 +1,526 @@
++<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
++<html lang="en">
++<head>
++ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
++ <title>BulletML Reference</title>
++</head>
++
++<body bgcolor="#ffffff" text="#111111" 
++      link="#006688" vlink="#004466" alink="#000000"
++      background="../gif/ababack000520.gif">
++
++<table border=0 width="100%" bgcolor="#bbaaee" summary="page title">
++<tr><td>
++<strong>BulletML Reference ver. 0.21</strong>
++</td><td align=right>
++(c) Kenta Cho(ABA."Saba")
++</td><td align=right>
++<a href="http://www.asahi-net.or.jp/~cs8k-cyu/"><strong>ABA Games</strong></a>
++</td></tr>
++</table>
++
++<p>
++BulletML simple reference.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;bulletml&gt; - Defines the BulletML's body</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - type = (none | vertical | horizontal)</p>
++<li><p><b>Contents</b> - (bullet | action | fire)*</p>
++</ul>
++
++<p>
++Define the BulletML's body.
++
++<p>
++A type attribute specifies that this barrage is for
++vertical scroll shooting or horizontal scroll shooting.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;bullet&gt; - Defines attributes of a bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - label = STRING</p>
++<li><p><b>Contents</b> - direction?, speed?, (action | actionRef)*</p>
++<li><p><b>Example</b></p>
++<pre>
++&lt;bullet label="downAccel"&gt;
++&lt;direction&gt;270&lt;/direction&gt;
++&lt;speed&gt;2&lt;/speed&gt;
++&lt;action&gt;
++&lt;accel&gt;
++ &lt;vertical&gt;3&lt;/vertical&gt;
++ &lt;term&gt;120&lt;/term&gt;
++&lt;/accel&gt;
++&lt;/action&gt;
++&lt;/bullet&gt;
++</pre>
++</ul>
++
++<p>
++Defines the direction, the speed and the action of bullet.
++
++<p>
++A label attribute labels the bullet.
++The labeled bullet element is referred by bulletRef elements.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;action&gt; - Defines the action of bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - label = STRING</p>
++<li><p><b>Contents</b> - (repeat | fire | fireRef | changeSpeed | changeDirection | accel | wait | vanish | action | actionRef)*</p>
++<li><p><b>Example</b></p>
++<pre>
++&lt;action&gt;
++&lt;changeSpeed&gt;
++ &lt;speed&gt;0&lt;/speed&gt;
++ &lt;term&gt;60&lt;/term&gt;
++&lt;/changeSpeed&gt;
++&lt;wait&gt;60&lt;/wait&gt;
++&lt;fire&gt;&lt;bullet/&gt;&lt;/fire&gt;
++&lt;fire&gt;
++ &lt;direction type="absolute"&gt;330+$rand*25&lt;/direction&gt;
++ &lt;bulletRef label="downAccel"/&gt;
++&lt;/fire&gt;
++&lt;vanish/&gt;
++&lt;/action&gt;
++</pre>
++</ul>
++
++<p>
++Defines the action of bullet.
++The labeled action element is referred by actionRef elements.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;fire&gt; - Fires a bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - label = STRING</p>
++<li><p><b>Contents</b> - direction?, speed?, (bullet | bulletRef)</p>
++<li><p><b>Example</b></p>
++<pre>
++&lt;fire&gt;
++ &lt;direction type="absolute"&gt;270&lt;/direction&gt;
++ &lt;speed&gt;2&lt;/speed&gt;
++ &lt;bulletRef label="rocket"/&gt;
++&lt;/fire&gt;
++</pre>
++</ul>
++
++<p>
++Fires a bullet to &lt;direction&gt; degrees at &lt;speed&gt;.
++The labeled fire element is referred by fireRef elements.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;changeDirection&gt; - Changes the direction of bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - direction, term</p>
++</ul>
++
++<p>
++Changes the direction of bullet to &lt;direction&gt; degrees in &lt;term&gt; frames.
++1 frame is 1/60 seconds.
++<p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;changeSpeed&gt; - Changes the speed of bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - speed, term</p>
++</ul>
++
++<p>
++Changes the speed of bullet to &lt;speed&gt; in &lt;term&gt; frames.
++<p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;accel&gt; - Accelerates a bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - horizontal?, vertical?, term</p>
++</ul>
++
++<p>
++Accelerates a bullet &lt;horizontal&gt; in a horizontal line and
++&lt;vertical&gt; in a vertical line in &lt;term&gt; frames.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;wait&gt; - Waits</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++Waits for NUMBER frames.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;vanish&gt; - Vanishes a bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<p>
++Vanishes a bullet.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;repeat&gt; - Repeats an action</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - times, (action | actionRef)</p>
++<li><p><b>Example</b></p>
++<pre>
++&lt;repeat&gt;
++&lt;times&gt;100&lt;/times&gt;
++&lt;action&gt;
++ &lt;fire&gt;
++  &lt;direction type="absolute"&gt;220+$rand*100&lt;/direction&gt;
++  &lt;bulletRef label="backBurst"/&gt;
++ &lt;/fire&gt;
++ &lt;wait&gt;6&lt;/wait&gt;
++&lt;/action&gt;
++&lt;/repeat&gt;
++</pre>
++</ul>
++
++<p>
++Repeats the action &lt;times&gt; times.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;direction&gt; - Specifies a direction</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - type = (aim | absolute | relative | sequence)</p>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++Specifies the direction in degrees.
++
++<p>
++"aim" type means that NUMBER is relative to the direction to my ship
++(The direction to my ship is 0, clockwise).
++
++<p>
++"absolute" type means that NUMBER is the absolute value
++(12 o'clock is 0, clockwise).
++
++<p>
++"relative" type means that NUMBER is relative to the direction of
++this bullet
++(0 means that the direction of this fire and 
++the direction of the bullet are the same).
++
++<p>
++"sequence" type means that NUMBER is relative to the direction of
++the previous fire
++(0 means that the direction of this fire and 
++the direction of the previous fire are the same).
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;speed&gt; - Specifies a speed</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - type = (absolute | relative | sequence)</p>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++Specifies the speed.
++
++<p>
++In case of the type is "relative", 
++if this element is included in changeSpeed element, 
++the speed is relative to the current speed of this bullet.
++If not,
++the speed is relative to the speed of this bullet.
++
++<p>
++In case of the type is "sequence", 
++if this element is included in changeSpeed element, 
++the speed is changing successively.
++If not,
++the speed is relative to the speed of the previous fire.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;horizontal&gt; - Specifies the acceleration in a horizontal line</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - type = (absolute | relative | sequence)</p>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++Specifies the acceleration in a horizontal line.
++
++<p>
++If the type is "relative", the acceleration is relative to 
++the acceleration of this bullet.
++If the type is "sequence", the acceleration is changing successively.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;vertical&gt; - Specifies the acceleration in a vertical line</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - type = (absolute | relative | sequence)</p>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++Specifies the acceleration in a vertical line.
++
++<p>
++If the type is "relative", the acceleration is relative to 
++the acceleration of this bullet.
++If the type is "sequence", the acceleration is changing successively.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;term&gt; - Specifies a term</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++Specifies a term.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;times&gt; - Specifies the number of times</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++Specifies the number of times.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;bulletRef&gt; - Refers to the bullet</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - label = STRING</p>
++<li><p><b>Contents</b> - param*</p>
++</ul>
++
++<p>
++Refers to the labeled bullet.
++This element is handled as the bullet element that has the same label.
++
++<p>
++Variables($1, $2, $3, ...) in the referred element are replaced 
++with parameters in &lt;param&gt;.
++(First parameter replaces $1, second parameter replaces $2, ...)
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;actionRef&gt; - Refers to the action</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - label = STRING</p>
++<li><p><b>Contents</b> - param*</p>
++</ul>
++
++<p>
++Refers to the labeled action.
++This element is handled as the action element that has the same label.
++
++<p>
++Variables in the referred element are replaced with parameters
++in &lt;param&gt;.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;fireRef&gt; - Refers to the fire action</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Attribute</b> - label = STRING</p>
++<li><p><b>Contents</b> - param*</p>
++</ul>
++
++<p>
++Refers to the labeled fire action.
++This element is handled as the fire action element that has the same label.
++
++<p>
++Variables in the referred element are replaced with parameters
++in &lt;param&gt;.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>&lt;param&gt; - Specifies the parameter</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Contents</b> - NUMBER</p>
++</ul>
++
++<p>
++Specifies the parameter.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>STRING - any string</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<p>
++String for labels.
++</p>
++
++<table border=0 width="100%" summary="element">
++<tr><td nowrap>
++<big><b>NUMBER - expression</b></big>
++</td><td width="100%">
++<hr size="1">
++</td></tr>
++</table>
++
++<ul>
++<li><p><b>Examples</b></p>
++<pre>
++35
++360/16
++0.7 + 0.9*$rand
++180-$rank*20
++(2+$1)*0.3
++</pre>
++</ul>
++
++<p>
++Expression for specifying the number.
++
++<p>
++An addition, a subtraction, a multiplication, a division, a modulo,
++a bracket, and variables($1, $2, $3... for parameters, 
++$rand for random value(from 0 to 1),
++$rank for the rank of game difficulty(from 0 to 1)) are available.
++</p>
++
++<table border=0 width="100%" bgcolor="#bbaaee" summary="return to top">
++<tr><td>
++-
++</td><td align=right>
++<a href="index_e.html">To BulletML page</a>
++</td></tr>
++</table>
++
++</body>
++
++</html>
+--- bulletml-0.0.6.orig/debian/doc/readme.txt
++++ bulletml-0.0.6/debian/doc/readme.txt
+@@ -0,0 +1,76 @@
++BulletML  readme.txt
++ver. 0.21
++(C) 長 健太(ABA."Saba")
++
++BulletMLは、シューティングゲームの弾幕を定義する弾幕定義言語です。
++詳細は以下のページを参照してください。
++
++ABA Games/BulletML
++http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/
++
++
++○ アーカイブの内容
++
++本アーカイブには、BulletMLのRELAX定義、BulletMLのサンプルおよび
++BulletMLデモプログラムのソースが含まれています。
++
++
++○ 謝辞
++
++BulletMLではXMLモデルの定義にRELAXを、XMLドキュメントの操作用
++Javaクラスの生成にRelaxerを利用させていただいています。
++
++RELAX
++http://www.xml.gr.jp/relax/
++
++Relaxer
++http://www.relaxer.org/
++
++
++○ ご意見、ご感想
++
++ご意見、ご感想は、cs8k-cyu@asahi-net.or.jp までお願いします。
++
++
++○ ヒストリ
++
++2001 5/14   ver. 0.2
++            初公開版。
++2001 6/3    ver. 0.21
++            bulletml, direction, speed, vertical, horizontalの
++            属性変更。
++            デモプログラムのパラメータ(param)の扱いのバグ修正。
++            デモプログラムにランク設定バー追加。
++
++
++○ ライセンス
++
++BulletMLのRELAX定義およびデモプログラムソースは、
++BSDスタイル・ライセンスのもと配布されます。
++
++License
++-------
++
++Copyright 2001 Kenta Cho. All rights reserved. 
++
++Redistribution and use in source and binary forms, 
++with or without modification, are permitted provided that 
++the following conditions are met: 
++
++ 1. Redistributions of source code must retain the above copyright notice, 
++    this list of conditions and the following disclaimer. 
++
++ 2. Redistributions in binary form must reproduce the above copyright notice, 
++    this list of conditions and the following disclaimer in the documentation 
++    and/or other materials provided with the distribution. 
++
++THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, 
++INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND 
++FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL 
++THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
++SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, 
++PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; 
++OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
++WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR 
++OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
++ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+--- bulletml-0.0.6.orig/debian/doc/bulletml.rlx
++++ bulletml-0.0.6/debian/doc/bulletml.rlx
+@@ -0,0 +1,224 @@
++<?xml version="1.0"?>
++<!DOCTYPE module SYSTEM "relaxCore.dtd">
++
++<!--
++  bulletml.rlx
++
++  Copyright 2001 Kenta Cho. All rights reserved. 
++-->
++
++<module 
++ moduleVersion="0.21"
++ relaxCoreVersion="1.0"
++ targetNamespace="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml"
++ xmlns="http://www.xml.gr.jp/xmlns/relaxCore">
++
++<interface>
++<export label="bulletml"/>
++</interface>
++
++
++<elementRule role="bulletml">
++<choice occurs="*">
++<ref label="action"/>
++<ref label="bullet"/>
++<ref label="fire"/>
++</choice>
++</elementRule>
++
++<hedgeRule label="bulletElm">
++<choice>
++<ref label="bullet"/>
++<ref label="bulletRef"/>
++</choice>
++</hedgeRule>
++
++<elementRule role="bulletRef">
++<choice occurs="*">
++<ref label="param"/>
++</choice>
++</elementRule>
++
++<elementRule role="param" type="string"/>
++
++<elementRule role="bullet">
++<sequence>
++<ref label="direction" occurs="?"/>
++<ref label="speed" occurs="?"/>
++<hedgeRef label="actionElm" occurs="*"/>
++</sequence>
++</elementRule>
++
++<elementRule role="direction" type="string"/>
++
++<elementRule role="speed" type="string"/>
++
++<hedgeRule label="actionElm">
++<choice>
++<ref label="action"/>
++<ref label="actionRef"/>
++</choice>
++</hedgeRule>
++
++<elementRule role="actionRef">
++<choice occurs="*">
++<ref label="param"/>
++</choice>
++</elementRule>
++
++<elementRule role="action">
++<choice occurs="*">
++<ref label="repeat"/>
++<hedgeRef label="fireElm"/>
++<ref label="changeSpeed"/>
++<ref label="changeDirection"/>
++<ref label="accel"/>
++<ref label="wait"/>
++<ref label="vanish"/>
++<hedgeRef label="actionElm"/>
++</choice>
++</elementRule>
++
++<elementRule role="repeat">
++<sequence>
++<ref label="times"/>
++<hedgeRef label="actionElm"/>
++</sequence>
++</elementRule>
++
++<elementRule role="times" type="string"/>
++
++<hedgeRule label="fireElm">
++<choice>
++<ref label="fire"/>
++<ref label="fireRef"/>
++</choice>
++</hedgeRule>
++
++<elementRule role="fireRef">
++<choice occurs="*">
++<ref label="param"/>
++</choice>
++</elementRule>
++
++<elementRule role="fire">
++<sequence>
++<ref label="direction" occurs="?"/>
++<ref label="speed" occurs="?"/>
++<hedgeRef label="bulletElm"/>
++</sequence>
++</elementRule>
++
++<elementRule role="changeSpeed">
++<sequence>
++<ref label="speed"/>
++<ref label="term"/>
++</sequence>
++</elementRule>
++
++<elementRule role="changeDirection">
++<sequence>
++<ref label="direction"/>
++<ref label="term"/>
++</sequence>
++</elementRule>
++
++<elementRule role="accel">
++<sequence>
++<ref label="horizontal" occurs="?"/>
++<ref label="vertical" occurs="?"/>
++<ref label="term"/>
++</sequence>
++</elementRule>
++
++<elementRule role="horizontal" type="string"/>
++
++<elementRule role="vertical" type="string"/>
++
++<elementRule role="term" type="string"/>
++
++<elementRule role="wait" type="string"/>
++
++<elementRule role="vanish" type="emptyString"/>
++
++
++<tag name="bulletml">
++<attribute name="xmlns" type="string"/>
++<attribute name="type" type="string">
++<enumeration value="none"/>
++<enumeration value="vertical"/>
++<enumeration value="horizontal"/>
++</attribute>
++</tag>
++
++<tag name="bullet">
++<attribute name="label" type="string"/>
++</tag>
++
++<tag name="bulletRef">
++<attribute name="label" required="true" type="string"/>
++</tag>
++
++<tag name="direction">
++<attribute name="type" type="string">
++<enumeration value="aim"/>
++<enumeration value="absolute"/>
++<enumeration value="relative"/>
++<enumeration value="sequence"/>
++</attribute>
++</tag>
++
++<tag name="speed">
++<attribute name="type" type="string">
++<enumeration value="absolute"/>
++<enumeration value="relative"/>
++<enumeration value="sequence"/>
++</attribute>
++</tag>
++
++<tag name="action">
++<attribute name="label" type="string"/>
++</tag>
++
++<tag name="actionRef">
++<attribute name="label" required="true" type="string"/>
++</tag>
++
++<tag name="fire">
++<attribute name="label" type="string"/>
++</tag>
++
++<tag name="fireRef">
++<attribute name="label" required="true" type="string"/>
++</tag>
++
++<tag name="repeat"/>
++<tag name="changeSpeed"/>
++<tag name="changeDirection"/>
++<tag name="accel"/>
++<tag name="wait"/>
++<tag name="vanish"/>
++
++<tag name="horizontal">
++<attribute name="type" type="string">
++<enumeration value="absolute"/>
++<enumeration value="relative"/>
++<enumeration value="sequence"/>
++</attribute>
++</tag>
++
++<tag name="vertical">
++<attribute name="type" type="string">
++<enumeration value="absolute"/>
++<enumeration value="relative"/>
++<enumeration value="sequence"/>
++</attribute>
++</tag>
++
++<tag name="term"/>
++
++<tag name="times"/>
++
++<tag name="param"/>
++
++</module>
+--- bulletml-0.0.6.orig/debian/doc/sample/[Guwange]_round_3_boss_fast_3way.xml
++++ bulletml-0.0.6/debian/doc/sample/[Guwange]_round_3_boss_fast_3way.xml
+@@ -0,0 +1,83 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="vertical"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="top">
++<repeat> <times>6+$rank*8</times>
++<action>
++<fire>
++ <direction>$rand*360</direction>
++ <speed>5</speed>
++ <bulletRef label="seed">
++  <param>5+$rand*10</param>
++ </bulletRef>
++</fire>
++<wait>20</wait>
++</action>
++</repeat>
++</action>
++
++<bullet label="seed">
++<action>
++<changeSpeed>
++ <speed>0</speed>
++ <term>$1</term>
++</changeSpeed>
++<wait>$1</wait>
++<fire>
++ <direction type="aim">-20</direction>
++ <bulletRef label="3way"/>
++</fire>
++<repeat> <times>2</times>
++<action>
++ <fire>
++  <direction type="sequence">20</direction>
++  <bulletRef label="3way"/>
++ </fire>
++</action>
++</repeat>
++<wait>1</wait>
++<repeat> <times>2</times>
++<action>
++ <fire>
++  <direction type="sequence">0</direction>
++  <speed type="sequence">-0.1</speed>
++  <bulletRef label="3way"/>
++ </fire>
++ <repeat> <times>2</times>
++ <action>
++  <fire>
++   <direction type="sequence">-20</direction>
++   <speed type="sequence">0</speed>
++   <bulletRef label="3way"/>
++  </fire>
++ </action>
++ </repeat>
++ <wait>1</wait>
++ <fire>
++  <direction type="sequence">0</direction>
++  <speed type="sequence">-0.1</speed>
++  <bulletRef label="3way"/>
++ </fire>
++ <repeat> <times>2</times>
++ <action>
++  <fire>
++   <direction type="sequence">20</direction>
++   <speed type="sequence">0</speed>
++   <bulletRef label="3way"/>
++  </fire>
++ </action>
++ </repeat>
++ <wait>1</wait>
++</action>
++</repeat>
++</action>
++</bullet>
++
++<bullet label="3way">
++<speed>1.8</speed>
++</bullet>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[Progear]_round_6_boss_parabola_shot.xml
++++ bulletml-0.0.6/debian/doc/sample/[Progear]_round_6_boss_parabola_shot.xml
+@@ -0,0 +1,55 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="horizontal"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="top">
++<repeat><times>50</times>
++<action>
++ <fire>
++  <direction type="absolute">190+$rand*30</direction>
++  <bulletRef label="seed"/>
++ </fire>
++ <wait>15-$rank*5</wait>
++</action>
++</repeat>
++</action>
++
++<bullet label="seed">
++<speed>1</speed>
++<action>
++<changeSpeed>
++ <speed>0</speed>
++ <term>60</term>
++</changeSpeed>
++<wait>60</wait>
++<fire><bullet/></fire>
++<fire>
++ <direction type="absolute">330+$rand*25</direction>
++ <bulletRef label="downAccel"/>
++</fire>
++<repeat> <times>3</times>
++<action>
++ <fire>
++  <direction type="sequence">0</direction>
++  <speed type="sequence">-0.4</speed>
++  <bulletRef label="downAccel"/>
++ </fire>
++</action>
++</repeat>
++<vanish/>
++</action>
++</bullet>
++
++<bullet label="downAccel">
++<speed>2</speed>
++<action>
++<accel>
++ <vertical>3</vertical>
++ <term>120</term>
++</accel>
++</action>
++</bullet>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[Guwange]_round_2_boss_circle_fire.xml
++++ bulletml-0.0.6/debian/doc/sample/[Guwange]_round_2_boss_circle_fire.xml
+@@ -0,0 +1,40 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="vertical"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<fire label="circle">
++<direction type="sequence">$1</direction>
++<speed>6</speed>
++<bullet>
++<action>
++ <wait>3</wait>
++ <fire>
++  <direction type="absolute">$2</direction>
++  <speed>1.5+$rank</speed>
++  <bullet/>
++ </fire>
++ <vanish/>
++</action>
++</bullet>
++</fire>
++
++<action label="fireCircle">
++<repeat> <times>18</times>
++<action>
++<fireRef label="circle">
++ <param>20</param>
++ <param>$1</param>
++</fireRef>
++</action>
++</repeat>
++</action>
++
++<action label="top">
++<actionRef label="fireCircle">
++ <param>180-45+90*$rand</param>
++</actionRef>
++</action>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[Progear]_round_2_boss_struggling.xml
++++ bulletml-0.0.6/debian/doc/sample/[Progear]_round_2_boss_struggling.xml
+@@ -0,0 +1,43 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="horizontal"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="top">
++<repeat> <times>100</times>
++<action>
++ <fire>
++  <direction type="sequence">180</direction>
++  <bulletRef label="changeStraight"/>
++ </fire>
++ <fire>
++  <direction type="sequence">160</direction>
++  <bulletRef label="changeStraight"/>
++ </fire>
++ <wait>2</wait>
++</action>
++</repeat>
++</action>
++
++<bullet label="changeStraight">
++<speed>0.6</speed>
++<action>
++<wait>20+$rand*100</wait>
++<changeDirection>
++ <direction type="absolute">270</direction>
++ <term>60</term>
++</changeDirection>
++<changeSpeed>
++ <speed>0</speed>
++ <term>40</term>
++</changeSpeed>
++<wait>40</wait>
++<changeSpeed>
++ <speed>0.5+$rand*0.7</speed>
++ <term>20</term>
++</changeSpeed>
++</action>
++</bullet>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[Progear]_round_5_middle_boss_rockets.xml
++++ bulletml-0.0.6/debian/doc/sample/[Progear]_round_5_middle_boss_rockets.xml
+@@ -0,0 +1,41 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="horizontal"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="top">
++<repeat><times>50</times>
++<action>
++ <fire>
++  <direction type="absolute">270</direction>
++  <bulletRef label="rocket"/>
++ </fire>
++ <wait>10</wait>
++</action>
++</repeat>
++</action>
++
++<bullet label="rocket">
++<action>
++<repeat><times>9999</times>
++<action>
++ <fireRef label="udBlt">
++  <param>90</param>
++ </fireRef>
++ <wait>20-$rank*8</wait>
++ <fireRef label="udBlt">
++  <param>-90</param>
++ </fireRef>
++ <wait>20-$rank*8</wait>
++</action>
++</repeat>
++</action>
++</bullet>
++
++<fire label="udBlt">
++<direction type="relative">$1-25+$rand*50</direction>
++<bullet/>
++</fire>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[Progear]_round_1_boss_grow_bullets.xml
++++ bulletml-0.0.6/debian/doc/sample/[Progear]_round_1_boss_grow_bullets.xml
+@@ -0,0 +1,46 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="horizontal"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="top">
++<fire>
++ <direction type="absolute">270-(4+$rank*6)*15/2</direction>
++ <bulletRef label="seed"/>
++</fire>
++<repeat><times>4+$rank*6</times>
++<action>
++ <fire>
++  <direction type="sequence">15</direction>
++  <bulletRef label="seed"/>
++ </fire>
++</action>
++</repeat>
++</action>
++
++<bullet label="seed">
++<speed>1.2</speed>
++<action>
++<changeSpeed>
++ <speed>0</speed>
++ <term>60</term>
++</changeSpeed>
++<wait>60</wait>
++<fire>
++ <speed>0.75</speed>
++ <bullet/>
++</fire>
++<repeat><times>4+$rank*4</times>
++<action>
++ <fire>
++  <speed type="sequence">0.15</speed>
++  <bullet/>
++ </fire>
++</action>
++</repeat>
++<vanish/>
++</action>
++</bullet>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[Progear]_round_3_boss_wave_bullets.xml
++++ bulletml-0.0.6/debian/doc/sample/[Progear]_round_3_boss_wave_bullets.xml
+@@ -0,0 +1,52 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="horizontal"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="top">
++<repeat><times>32</times>
++<action>
++ <fire>
++  <direction type="absolute">320</direction>
++  <bulletRef label="wave">
++   <param>-3</param>
++  </bulletRef>
++ </fire>
++ <wait>30</wait>
++ <fire>
++  <direction type="absolute">220</direction>
++  <bulletRef label="wave">
++   <param>3</param>
++  </bulletRef>
++ </fire>
++ <wait>30</wait>
++</action>
++</repeat>
++</action>
++
++<bullet label="wave">
++<speed>1</speed>
++<action>
++<fire>
++ <direction>0</direction>
++ <bulletRef label="nrm"/>
++</fire>
++<repeat><times>8+$rank*10</times>
++<action>
++ <fire>
++  <direction type="sequence">$1</direction>
++  <bulletRef label="nrm"/>
++ </fire>
++ <wait>3</wait>
++</action>
++</repeat>
++<vanish/>
++</action>
++</bullet>
++
++<bullet label="nrm">
++<speed>1</speed>
++</bullet>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[1943]_rolling_fire.xml
++++ bulletml-0.0.6/debian/doc/sample/[1943]_rolling_fire.xml
+@@ -0,0 +1,34 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="vertical"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="top">
++<fire>
++<bulletRef label="roll"/>
++</fire>
++</action>
++
++<bullet label="roll">
++<action>
++<wait>40+$rand*20</wait>
++<changeDirection>
++ <direction type="relative">-90</direction>
++ <term>4</term>
++</changeDirection>
++<changeSpeed>
++ <speed>3</speed>
++ <term>4</term>
++</changeSpeed>
++<wait>4</wait>
++<changeDirection>
++ <direction type="sequence">15</direction>
++ <term>9999</term>
++</changeDirection>
++<wait>80+$rand*40</wait>
++<vanish/>
++</action>
++</bullet>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[G_DARIUS]_homing_laser.xml
++++ bulletml-0.0.6/debian/doc/sample/[G_DARIUS]_homing_laser.xml
+@@ -0,0 +1,54 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="horizontal"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="top">
++<repeat><times>8</times>
++<action>
++ <fire>
++  <direction>-60+$rand*120</direction>
++  <bulletRef label="hmgLsr"/>
++ </fire>
++ <repeat><times>8</times>
++ <action>
++  <wait>1</wait>
++  <fire>
++   <direction type="sequence">0</direction>
++   <bulletRef label="hmgLsr"/>
++  </fire>
++ </action>
++ </repeat>
++ <wait>10</wait>
++</action>
++</repeat>
++</action>
++
++<bullet label="hmgLsr">
++<speed>2</speed>
++<action>
++<changeSpeed>
++ <speed>0.3</speed>
++ <term>30</term>
++</changeSpeed>
++<wait>100</wait>
++<changeSpeed>
++ <speed>5</speed>
++ <term>100</term>
++</changeSpeed>
++</action>
++<action>
++<repeat><times>9999</times>
++<action>
++ <changeDirection>
++  <direction type="aim">0</direction>
++  <term>60-$rank*20</term>
++ </changeDirection>
++ <wait>5</wait>
++</action>
++</repeat>
++</action>
++</bullet>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[Psyvariar]_X-A_boss_opening.xml
++++ bulletml-0.0.6/debian/doc/sample/[Psyvariar]_X-A_boss_opening.xml
+@@ -0,0 +1,20 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="vertical"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="top">
++<repeat> <times>100</times>
++<action>
++ <fire>
++  <direction>-45+$rand*90</direction>
++  <speed>0.4+$rand*0.8</speed>
++  <bullet/>
++ </fire>
++ <wait>2</wait>
++</action>
++</repeat>
++</action>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[Psyvariar]_X-B_colony_shape_satellite.xml
++++ bulletml-0.0.6/debian/doc/sample/[Psyvariar]_X-B_colony_shape_satellite.xml
+@@ -0,0 +1,61 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="vertical"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="top">
++<repeat><times>5</times>
++<action>
++ <fire>
++  <direction type="absolute">152</direction>
++  <bulletRef label="norm"/>
++ </fire>
++ <repeat><times>8</times>
++ <action>
++  <fire>
++   <direction type="sequence">7</direction>
++   <bulletRef label="norm"/>
++  </fire>
++ </action>
++ </repeat>
++ <wait>8</wait>
++</action>
++</repeat>
++<wait>10</wait>
++<repeat><times>7</times>
++<action>
++ <fire>
++  <direction type="absolute">180-45+$rand*90</direction>
++  <bulletRef label="norm"/>
++ </fire>
++ <repeat><times>4</times>
++ <action>
++  <fire>
++   <direction type="sequence">0</direction>
++   <speed>1.5</speed>
++   <bulletRef label="norm"/>
++  </fire>
++  <wait>4</wait>
++ </action>
++ </repeat>
++</action>
++</repeat>
++<wait>10</wait>
++<repeat><times>12</times>
++<action>
++ <fire>
++  <direction>0</direction>
++  <speed>2</speed>
++  <bulletRef label="norm"/>
++ </fire>
++ <wait>6</wait>
++</action>
++</repeat>
++</action>
++
++<bullet label="norm">
++<speed>1</speed>
++</bullet>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[Progear]_round_4_boss_fast_rocket.xml
++++ bulletml-0.0.6/debian/doc/sample/[Progear]_round_4_boss_fast_rocket.xml
+@@ -0,0 +1,75 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="horizontal"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="fireRoot">
++<fire>
++ <direction type="absolute">$1</direction>
++ <speed>0.2</speed>
++ <bulletRef label="rootBl"/>
++</fire>
++<repeat> <times>3</times>
++<action>
++<fire>
++ <direction type="absolute">$1</direction>
++ <speed type="sequence">0.4</speed>
++ <bulletRef label="rootBl"/>
++</fire>
++</action>
++</repeat>
++</action>
++
++<action label="top">
++<actionRef label="fireRoot">
++ <param>$rand*16</param>
++</actionRef>
++<actionRef label="fireRoot">
++ <param>180+$rand*16</param>
++</actionRef>
++<wait>120</wait>
++</action>
++
++<bullet label="rootBl">
++<action>
++<wait>40</wait>
++<fire>
++ <direction type="absolute">274+$rand*4</direction>
++ <bulletRef label="rocket"/>
++</fire>
++<vanish/>
++</action>
++</bullet>
++
++<bullet label="rocket">
++<speed>5+$rand</speed>
++<action>
++<repeat> <times>9999</times>
++ <action>
++ <fire>
++  <direction type="absolute">0</direction>
++  <speed>1</speed>
++  <bulletRef label="downAccel"/>
++ </fire>
++ <fire>
++  <direction type="absolute">60</direction>
++  <speed>1.8</speed>
++  <bulletRef label="downAccel"/>
++ </fire>
++ <wait>3</wait>
++</action>
++</repeat>
++</action>
++</bullet>
++
++<bullet label="downAccel">
++<action>
++<accel>
++<vertical>2.7</vertical>
++<term>120</term>
++</accel>
++</action>
++</bullet>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[Progear]_round_3_boss_back_burst.xml
++++ bulletml-0.0.6/debian/doc/sample/[Progear]_round_3_boss_back_burst.xml
+@@ -0,0 +1,49 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="horizontal"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="top">
++<repeat> <times>100</times>
++<action>
++ <fire>
++  <direction type="absolute">220+$rand*100</direction>
++  <bulletRef label="backBurst"/>
++ </fire>
++ <wait>6-$rank*2</wait>
++</action>
++</repeat>
++</action>
++
++<bullet label="backBurst">
++<speed>1.2</speed>
++<action>
++<changeSpeed>
++ <speed>0</speed>
++ <term>80</term>
++</changeSpeed>
++<wait>60+$rand*20</wait>
++<repeat> <times>2</times>
++<action>
++ <fire>
++ <direction type="absolute">50+$rand*80</direction>
++ <bulletRef label="downAccel"/>
++ </fire>
++</action>
++</repeat>
++<vanish/>
++</action>
++</bullet>
++
++<bullet label="downAccel">
++<speed>1.8</speed>
++<action>
++<accel>
++ <horizontal>-7</horizontal>
++ <term>250</term>
++</accel>
++</action>
++</bullet>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/template.xml
++++ bulletml-0.0.6/debian/doc/sample/template.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml 
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[Psyvariar]_X-A_boss_winder.xml
++++ bulletml-0.0.6/debian/doc/sample/[Psyvariar]_X-A_boss_winder.xml
+@@ -0,0 +1,69 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="vertical"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<bullet label="winderBullet">
++ <speed>3</speed>
++</bullet>
++
++<fire label="fireWinder">
++ <direction type="sequence">$1</direction>
++ <bulletRef label="winderBullet"/>
++</fire>
++
++<action label="roundWinder">
++ <fireRef label="fireWinder">
++  <param>$1</param>
++ </fireRef>
++ <repeat> <times>11</times>
++ <action>
++  <fireRef label="fireWinder">
++   <param>30</param>
++  </fireRef>
++ </action>
++ </repeat>
++ <wait>5</wait>
++</action>
++
++<action label="winderSequence">
++<repeat> <times>12</times>
++<actionRef label="roundWinder">
++ <param>30</param>
++</actionRef>
++</repeat>
++<repeat> <times>12</times>
++<actionRef label="roundWinder">
++ <param>$1</param>
++</actionRef>
++</repeat>
++<repeat> <times>12</times>
++<actionRef label="roundWinder">
++ <param>30</param>
++</actionRef>
++</repeat>
++</action>
++
++<action label="top1">
++<fire>
++ <direction type="absolute">2</direction>
++ <bulletRef label="winderBullet"/>
++</fire>
++<actionRef label="winderSequence">
++ <param>31</param>
++</actionRef>
++</action>
++
++
++<action label="top2">
++<fire>
++ <direction type="absolute">-2</direction>
++ <bulletRef label="winderBullet"/>
++</fire>
++<actionRef label="winderSequence">
++ <param>29</param>
++</actionRef>
++</action>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[Progear]_round_5_boss_last_round_wave.xml
++++ bulletml-0.0.6/debian/doc/sample/[Progear]_round_5_boss_last_round_wave.xml
+@@ -0,0 +1,33 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="horizontal"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="top">
++<repeat><times>2+$rank*1.5</times>
++<action>
++ <fire>
++  <bulletRef label="rfRkt"/>
++ </fire>
++ <wait>45</wait>
++</action>
++</repeat>
++<wait>60</wait>
++</action>
++
++<bullet label="rfRkt">
++<action>
++<repeat><times>9999</times>
++<action>
++ <wait>1</wait>
++ <fire>
++  <direction type="sequence">13</direction>
++  <bullet/>
++ </fire>
++</action>
++</repeat>
++</action>
++</bullet>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[XEVIOUS]_garu_zakato.xml
++++ bulletml-0.0.6/debian/doc/sample/[XEVIOUS]_garu_zakato.xml
+@@ -0,0 +1,63 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="vertical"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="top">
++<fire>
++ <direction type="absolute">180</direction>
++ <speed>3</speed>
++ <bulletRef label="gzc"/>
++</fire>
++</action>
++
++<bullet label="gzc">
++<action>
++<wait>10+$rand*10</wait>
++<repeat><times>16</times>
++<action>
++ <fire>
++  <direction type="sequence">360/16</direction>
++  <bulletRef label="spr"/>
++ </fire>
++</action>
++</repeat>
++<repeat><times>4</times>
++<action>
++ <fire>
++  <direction type="sequence">90</direction>
++  <bulletRef label="hrmSpr"/>
++ </fire>
++</action>
++</repeat>
++<vanish/>
++</action>
++</bullet>
++
++<bullet label="spr">
++<speed>2</speed>
++</bullet>
++
++<bullet label="hrmSpr">
++<speed>0</speed>
++<action>
++<changeSpeed>
++ <speed>2</speed>
++ <term>60</term>
++</changeSpeed>
++</action>
++<action>
++<repeat><times>9999</times>
++<action>
++ <changeDirection>
++  <direction type="aim">0</direction>
++  <term>40</term>
++ </changeDirection>
++ <wait>1</wait>
++</action>
++</repeat>
++</action>
++</bullet>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/doc/sample/[Guwange]_round_4_boss_eye_ball.xml
++++ bulletml-0.0.6/debian/doc/sample/[Guwange]_round_4_boss_eye_ball.xml
+@@ -0,0 +1,60 @@
++<?xml version="1.0" ?>
++<!DOCTYPE bulletml SYSTEM "http://www.asahi-net.or.jp/~cs8k-cyu/bulletml/bulletml.dtd">
++
++<bulletml type="vertical"
++          xmlns="http://www.asahi-net.or.jp/~cs8k-cyu/bulletml">
++
++<action label="top">
++<repeat> <times>4+$rank*4</times>
++<action>
++ <fire>
++  <direction>$rand*360</direction>
++  <bulletRef label="eye"/>
++ </fire>
++ <wait>30</wait>
++</action>
++</repeat>
++</action>
++
++<bullet label="eye">
++<speed>0</speed>
++<action>
++<changeSpeed>
++ <speed>10</speed>
++ <term>400</term>
++</changeSpeed>
++<changeDirection>
++ <direction type="sequence">$rand*5-2</direction>
++ <term>9999</term>
++</changeDirection>
++<repeat> <times>9999</times>
++<action>
++ <fire>
++  <direction type="relative">0</direction>
++  <bulletRef label="shadow"/>
++ </fire>
++ <wait>4</wait>
++</action>
++</repeat>
++</action>
++</bullet>
++
++<bullet label="shadow">
++<speed>0</speed>
++<action>
++<wait>20</wait>
++<fire>
++ <direction type="relative">90</direction>
++ <speed>0.6</speed>
++ <bullet/>
++</fire>
++<fire>
++ <direction type="relative">-90</direction>
++ <speed>0.6</speed>
++ <bullet/>
++</fire>
++<vanish/>
++</action>
++</bullet>
++
++</bulletml>
+--- bulletml-0.0.6.orig/debian/patches/series
++++ bulletml-0.0.6/debian/patches/series
+@@ -0,0 +1,7 @@
++fixes.patch
++bulletml_d.patch
++d_cpp.patch
++warnings.patch
++makefile.patch
++includes.patch
++get-rid-of-boost.patch
+--- bulletml-0.0.6.orig/debian/patches/includes.patch
++++ bulletml-0.0.6/debian/patches/includes.patch
+@@ -0,0 +1,30 @@
++# Copyright (C) 2008  Peter De Wachter <pdewacht@gmail.com>
++# Distributed under the same license as the original software. See debian/copyright.
++
++Index: bulletml-0.0.6/src/tinyxml/tinyxml.h
++===================================================================
++--- bulletml-0.0.6.orig/src/tinyxml/tinyxml.h	2007-12-31 22:41:41.000000000 +0100
+++++ bulletml-0.0.6/src/tinyxml/tinyxml.h	2007-12-31 22:42:26.000000000 +0100
++@@ -26,7 +26,9 @@
++ #define TINYXML_INCLUDED
++ 
++ #include <string>
+++#include <string.h>
++ #include <stdio.h>
+++#include <stdlib.h>
++ #include <assert.h>
++ 
++ class TiXmlDocument;
++Index: bulletml-0.0.6/src/calc.yy
++===================================================================
++--- bulletml-0.0.6.orig/src/calc.yy	2007-12-31 22:42:56.000000000 +0100
+++++ bulletml-0.0.6/src/calc.yy	2007-12-31 22:43:10.000000000 +0100
++@@ -12,6 +12,8 @@
++ #include <vector>
++ #include <sstream>
++ 
+++#include <string.h>
+++
++ #include "calc.h"
++ #include "formula.h"
++ #include "formula-variables.h"
+--- bulletml-0.0.6.orig/debian/patches/bulletml_d.patch
++++ bulletml-0.0.6/debian/patches/bulletml_d.patch
+@@ -0,0 +1,100 @@
++# Copyright (C) 2003  shinichiro.h <hamaji@nii.ac.jp>
++# Distributed under the same license as the original software. See debian/copyright.
++
++Index: bulletml-0.0.6/src/bulletml_d.cpp
++===================================================================
++--- /dev/null	1970-01-01 00:00:00.000000000 +0000
+++++ bulletml-0.0.6/src/bulletml_d.cpp	2007-08-28 11:43:24.000000000 +0000
++@@ -0,0 +1,92 @@
+++#include "d_cpp_interface.h"
+++
+++#include "bulletmlparser.h"
+++#include "bulletmlparser-tinyxml.h"
+++#include "bulletmlrunner.h"
+++
+++// BulletMLParserTinyXML
+++extern "C" {
+++	D_CPP_CLASS(BulletMLParserTinyXML, BulletMLParserTinyXML)
+++	D_CPP_NEW_1(BulletMLParserTinyXML, BulletMLParserTinyXML_new, const char*)
+++	D_CPP_METHOD_0(BulletMLParserTinyXML, parse, BulletMLParserTinyXML_parse, void)
+++	D_CPP_DELETE(BulletMLParserTinyXML, BulletMLParserTinyXML_delete)
+++}
+++
+++// BulletMLParser
+++extern "C" {
+++	D_CPP_CLASS(BulletMLParser, BulletMLParser)
+++}
+++
+++// BulletMLState
+++extern "C" {
+++	D_CPP_CLASS(BulletMLState, BulletMLState)
+++}
+++
+++// BulletMLRunner virtual functions
+++D_CPP_BASE_CLASS_OPEN(BulletMLRunner, BulletMLRunnerD)
+++
+++BulletMLRunnerD(BulletMLParser* p) : BulletMLRunner(p), D_getRand_fp(0) {}
+++BulletMLRunnerD(BulletMLState* s) : BulletMLRunner(s), D_getRand_fp(0) {}
+++
+++D_CPP_VIRTUAL_METHOD_0(BulletMLRunnerD, getBulletDirection, double)
+++D_CPP_VIRTUAL_METHOD_0(BulletMLRunnerD, getAimDirection, double)
+++D_CPP_VIRTUAL_METHOD_0(BulletMLRunnerD, getBulletSpeed, double)
+++D_CPP_VIRTUAL_METHOD_0(BulletMLRunnerD, getDefaultSpeed, double)
+++D_CPP_VIRTUAL_METHOD_0(BulletMLRunnerD, getRank, double)
+++D_CPP_VIRTUAL_METHOD_2(BulletMLRunnerD, createSimpleBullet, void, double, double)
+++D_CPP_VIRTUAL_METHOD_3(BulletMLRunnerD, createBullet, void, BulletMLState*, double, double)
+++D_CPP_VIRTUAL_METHOD_0(BulletMLRunnerD, getTurn, int)
+++D_CPP_VIRTUAL_METHOD_0(BulletMLRunnerD, doVanish, void)
+++
+++D_CPP_VIRTUAL_METHOD_1(BulletMLRunnerD, doChangeDirection, void, double)
+++D_CPP_VIRTUAL_METHOD_1(BulletMLRunnerD, doChangeSpeed, void, double)
+++D_CPP_VIRTUAL_METHOD_1(BulletMLRunnerD, doAccelX, void, double)
+++D_CPP_VIRTUAL_METHOD_1(BulletMLRunnerD, doAccelY, void, double)
+++D_CPP_VIRTUAL_METHOD_0(BulletMLRunnerD, getBulletSpeedX, double)
+++D_CPP_VIRTUAL_METHOD_0(BulletMLRunnerD, getBulletSpeedY, double)
+++
+++double (*D_getRand_fp) (BulletMLRunnerD*);
+++virtual double getRand() {
+++	if (D_getRand_fp) {
+++		return D_getRand_fp(this);
+++	}
+++	else {
+++		return BulletMLRunner::getRand();
+++	}
+++}
+++void D_set_getRand(double (*fp) (BulletMLRunnerD*)) {
+++	D_getRand_fp = fp;
+++}
+++
+++D_CPP_BASE_CLASS_CLOSE()
+++
+++// BulletMLRunner
+++extern "C" {
+++	D_CPP_CLASS(BulletMLRunner, BulletMLRunner)
+++	D_CPP_CLASS(BulletMLRunnerD, BulletMLRunnerD)
+++	D_CPP_NEW_1(BulletMLRunnerD, BulletMLRunner_new_parser, BulletMLParser*)
+++	D_CPP_NEW_1(BulletMLRunnerD, BulletMLRunner_new_state, BulletMLState*)
+++	D_CPP_DELETE(BulletMLRunnerD, BulletMLRunner_delete)
+++	D_CPP_METHOD_0(BulletMLRunnerD, run, BulletMLRunner_run, void)
+++	D_CPP_METHOD_0(BulletMLRunnerD, isEnd, BulletMLRunner_isEnd, bool)
+++
+++	D_CPP_VIRTUAL_METHOD_SETTER_0(BulletMLRunnerD, getBulletDirection, BulletMLRunner_set_getBulletDirection, double)
+++	D_CPP_VIRTUAL_METHOD_SETTER_0(BulletMLRunnerD, getAimDirection, BulletMLRunner_set_getAimDirection, double)
+++	D_CPP_VIRTUAL_METHOD_SETTER_0(BulletMLRunnerD, getBulletSpeed, BulletMLRunner_set_getBulletSpeed, double)
+++	D_CPP_VIRTUAL_METHOD_SETTER_0(BulletMLRunnerD, getDefaultSpeed, BulletMLRunner_set_getDefaultSpeed, double)
+++	D_CPP_VIRTUAL_METHOD_SETTER_0(BulletMLRunnerD, getRank, BulletMLRunner_set_getRank, double)
+++	D_CPP_VIRTUAL_METHOD_SETTER_2(BulletMLRunnerD, createSimpleBullet, BulletMLRunner_set_createSimpleBullet, void, double, double)
+++	D_CPP_VIRTUAL_METHOD_SETTER_3(BulletMLRunnerD, createBullet, BulletMLRunner_set_createBullet, void, BulletMLState*, double, double)
+++	D_CPP_VIRTUAL_METHOD_SETTER_0(BulletMLRunnerD, getTurn, BulletMLRunner_set_getTurn, int)
+++	D_CPP_VIRTUAL_METHOD_SETTER_0(BulletMLRunnerD, doVanish, BulletMLRunner_set_doVanish, void)
+++
+++	D_CPP_VIRTUAL_METHOD_SETTER_1(BulletMLRunnerD, doChangeDirection, BulletMLRunner_set_doChangeDirection, void, double)
+++	D_CPP_VIRTUAL_METHOD_SETTER_1(BulletMLRunnerD, doChangeSpeed, BulletMLRunner_set_doChangeSpeed, void, double)
+++	D_CPP_VIRTUAL_METHOD_SETTER_1(BulletMLRunnerD, doAccelX, BulletMLRunner_set_doAccelX, void, double)
+++	D_CPP_VIRTUAL_METHOD_SETTER_1(BulletMLRunnerD, doAccelY, BulletMLRunner_set_doAccelY, void, double)
+++	D_CPP_VIRTUAL_METHOD_SETTER_0(BulletMLRunnerD, getBulletSpeedX, BulletMLRunner_set_getBulletSpeedX, double)
+++	D_CPP_VIRTUAL_METHOD_SETTER_0(BulletMLRunnerD, getBulletSpeedY, BulletMLRunner_set_getBulletSpeedY, double)
+++	D_CPP_VIRTUAL_METHOD_SETTER_0(BulletMLRunnerD, getRand, BulletMLRunner_set_getRand, double)
+++
+++}
+++
+--- bulletml-0.0.6.orig/debian/patches/warnings.patch
++++ bulletml-0.0.6/debian/patches/warnings.patch
+@@ -0,0 +1,38 @@
++# Copyright (C) 2007  Peter De Wachter <pdewacht@gmail.com>
++# Distributed under the same license as the original software. See debian/copyright.
++
++Index: bulletml-0.0.6/src/bulletmlrunnerimpl.cpp
++===================================================================
++--- bulletml-0.0.6.orig/src/bulletmlrunnerimpl.cpp	2007-08-28 11:43:23.000000000 +0000
+++++ bulletml-0.0.6/src/bulletmlrunnerimpl.cpp	2007-08-28 11:43:25.000000000 +0000
++@@ -467,7 +467,7 @@
++ 		double dirSpace2;
++ 		if (dirSpace1 > 0) dirSpace2 = dirSpace1 - 360;
++ 		else dirSpace2 = dirSpace1 + 360;
++-		if (abs(dirSpace1) < abs(dirSpace2)) dirSpace = dirSpace1;
+++		if (fabs(dirSpace1) < fabs(dirSpace2)) dirSpace = dirSpace1;
++ 		else dirSpace = dirSpace2;
++ 
++ 		auto_ptr_copy(changeDir_, new LinearFunc<int, double>
++Index: bulletml-0.0.6/src/formula-variables.h
++===================================================================
++--- bulletml-0.0.6.orig/src/formula-variables.h	2007-08-28 11:41:01.000000000 +0000
+++++ bulletml-0.0.6/src/formula-variables.h	2007-08-28 11:43:25.000000000 +0000
++@@ -33,7 +33,7 @@
++ template <typename Val_>
++ class Param : public AbstractNumber<Val_> {
++ public:
++-	DECLSPEC explicit Param(int id) : id_(id) {}
+++	DECLSPEC explicit Param(unsigned int id) : id_(id) {}
++ 	DECLSPEC virtual Val_ value() const {
++ 		if (Variables::parameters && id_ < Variables::parameters->size()) {
++ 			return (*Variables::parameters)[id_];
++@@ -44,7 +44,7 @@
++ 	}
++ 
++ private:
++-	int id_;
+++	unsigned int id_;
++ };
++ 
++ #endif // ! FORMULA_VARIABLE_H_
+--- bulletml-0.0.6.orig/debian/patches/makefile.patch
++++ bulletml-0.0.6/debian/patches/makefile.patch
+@@ -0,0 +1,63 @@
++# Copyright (C) 2007  Miriam Ruiz <little_miry@yahoo.es>
++# Distributed under the same license as the original software. See debian/copyright.
++
++Index: bulletml-0.0.6/src/Makefile
++===================================================================
++--- bulletml-0.0.6.orig/src/Makefile	2007-08-28 11:52:24.000000000 +0000
+++++ bulletml-0.0.6/src/Makefile	2007-08-28 11:54:20.000000000 +0000
++@@ -1,27 +1,46 @@
++-CC = g++
++-INCLUDES = -I.
++-LIBS = tinyxml/tinyxml.o tinyxml/tinyxmlparser.o tinyxml/tinyxmlerror.o
++ #CXXFLAGS = -g -W -Wall -ansi -pedantic
++ #CXXFLAGS = -pg -g -W -Wall -ansi -pedantic
+++#CXXFLAGS = -O2 -W -Wall -ansi -pedantic -I. -I../d_cpp
++ CXXFLAGS = -O2 -W -Wall -ansi -pedantic
++ CFLAGS = -O2
++-OBJS = bulletmlparser-tinyxml.o bulletmlparser.o bulletmltree.o calc.o formula-variables.o bulletmlrunner.o bulletmlrunnerimpl.o
+++LDFLAGS=
+++INCLUDES= -I. -I../d_cpp
+++OBJS = bulletmlparser-tinyxml.o bulletmlparser.o bulletmltree.o calc.o \
+++	formula-variables.o bulletmlrunner.o bulletmlrunnerimpl.o bulletml_d.o
+++
+++MAJOR=0d2
+++MINOR=0
+++
+++all: libbulletml.a libbulletml.so
+++
+++libbulletml.so: tinyxml/tinyxml.o ../bulletml.d $(OBJS)
+++	$(CXX) $(LDFLAGS) -shared \
+++		-Wl,-soname,$@.$(MAJOR) \
+++		-o $@.$(MAJOR).$(MINOR) \
+++		*.o tinyxml/tiny*.o
+++	rm -f $@.$(MAJOR)
+++	ln -s $@.$(MAJOR).$(MINOR) $@.$(MAJOR)
+++	rm -f $@
+++	ln -s $@.$(MAJOR) $@
++ 
++-all: libbulletml.a
+++libbulletml.a: tinyxml/tinyxml.o ../bulletml.d $(OBJS)
+++	ar cru $@ *.o tinyxml/tiny*.o
++ 
++-libbulletml.a: $(OBJS)
+++../bulletml.d: bulletml_d.cpp
+++	perl ../d_cpp/create_d_import.pl bulletml_d.cpp bulletml.d
+++
+++tinyxml/tinyxml.o:
++ 	$(MAKE) -C tinyxml
++-	$(AR) -r libbulletml.a *.o tinyxml/tiny*.o
++ 
++ clean:
++-	rm -f *.o *.a
+++	rm -f *.o *.a test_bulletml *.so *.so.*
++ 	$(MAKE) -C tinyxml clean
++ 
++ calc.cpp: calc.yy
++ 	bison -y   calc.yy && mv y.tab.c calc.cpp
++ 
++ $(OBJS): %.o: %.cpp
++-	$(CC) -c $(CXXFLAGS) $(INCLUDES) $<
+++	$(CXX) -c $(CXXFLAGS) $(INCLUDES) $<
++ 
++ doxy:
++ 	doxygen
+--- bulletml-0.0.6.orig/debian/patches/d_cpp.patch
++++ bulletml-0.0.6/debian/patches/d_cpp.patch
+@@ -0,0 +1,13 @@
++# Copyright (C) 2007  Miriam Ruiz <little_miry@yahoo.es>
++# Distributed under the same license as the original software. See debian/copyright.
++
++Index: bulletml-0.0.6/d_cpp/d_cpp_interface.h
++===================================================================
++--- bulletml-0.0.6.orig/d_cpp/d_cpp_interface.h	2007-08-28 11:41:01.000000000 +0000
+++++ bulletml-0.0.6/d_cpp/d_cpp_interface.h	2007-08-28 11:43:24.000000000 +0000
++@@ -1,4 +1,4 @@
++-#define D_CPP_CLASS(CLASS, CLASS_NAME) ;
+++#define D_CPP_CLASS(CLASS, CLASS_NAME)
++ 
++ #define D_CPP_NEW_0(CLASS, NEW_NAME) \
++ CLASS* NEW_NAME() { \
+--- bulletml-0.0.6.orig/debian/patches/get-rid-of-boost.patch
++++ bulletml-0.0.6/debian/patches/get-rid-of-boost.patch
+@@ -0,0 +1,108 @@
++# Copyright 2009  Peter De Wachter <pdewacht@gmail.com>
++# Distributed under the same license as the original software.
++# See debian/copyright.
++
++# Replace boost::shared_ptr with std::tr1::shared_ptr, so we no longer
++# need to depend on boost.
++
++--- a/src/bulletmlrunner.cpp
+++++ b/src/bulletmlrunner.cpp
++@@ -11,7 +11,7 @@
++ 		act.push_back(acts[i]);
++ 		BulletMLState* state =
++ 			new BulletMLState(bulletml, act,
++-							  boost::shared_ptr<BulletMLParameter>());
+++							  std::tr1::shared_ptr<BulletMLParameter>());
++ 		impl_.push_back(makeImpl(state));
++ 	}
++ }
++--- a/src/bulletmlrunner.h
+++++ b/src/bulletmlrunner.h
++@@ -11,7 +11,7 @@
++ #include "bulletmlcommon.h"
++ 
++ #include <vector>
++-#include <boost/smart_ptr.hpp>
+++#include <tr1/memory>
++ 
++ class BulletMLParser;
++ class BulletMLNode;
++@@ -24,17 +24,17 @@
++ public:
++ 	DECLSPEC BulletMLState(BulletMLParser* bulletml,
++ 						   const std::vector<BulletMLNode*>& node,
++-						   boost::shared_ptr<BulletMLParameter> para)
+++						   std::tr1::shared_ptr<BulletMLParameter> para)
++ 		: bulletml_(bulletml), node_(node.begin(), node.end()), para_(para) {}
++ 
++ 	DECLSPEC BulletMLParser* getBulletML() { return bulletml_; }
++ 	DECLSPEC const std::vector<BulletMLNode*>& getNode() const { return node_; }
++-	DECLSPEC boost::shared_ptr<BulletMLParameter> getParameter() { return para_; }
+++	DECLSPEC std::tr1::shared_ptr<BulletMLParameter> getParameter() { return para_; }
++ 
++ private:
++ 	BulletMLParser* bulletml_;
++ 	std::vector<BulletMLNode*> node_;
++-	boost::shared_ptr<BulletMLParameter> para_;
+++	std::tr1::shared_ptr<BulletMLParameter> para_;
++ 
++ };
++ 
++--- a/src/bulletmlrunnerimpl.cpp
+++++ b/src/bulletmlrunnerimpl.cpp
++@@ -368,7 +368,7 @@
++ }
++ 
++ void BulletMLRunnerImpl::runFireRef() {
++-	boost::shared_ptr<Parameters> prevPara = parameters_;
+++	std::tr1::shared_ptr<Parameters> prevPara = parameters_;
++ 	parameters_.reset(getParameters());
++ 
++ 	refStack_.push(std::make_pair(act_, prevPara));
++@@ -376,7 +376,7 @@
++ }
++ 
++ void BulletMLRunnerImpl::runActionRef() {
++-	boost::shared_ptr<Parameters> prevPara = parameters_;
+++	std::tr1::shared_ptr<Parameters> prevPara = parameters_;
++ 	parameters_.reset(getParameters());
++ 
++ 	refStack_.push(std::make_pair(act_, prevPara));
++@@ -384,7 +384,7 @@
++ }
++ 
++ void BulletMLRunnerImpl::runBulletRef() {
++-	boost::shared_ptr<Parameters> prevPara = parameters_;
+++	std::tr1::shared_ptr<Parameters> prevPara = parameters_;
++ 	parameters_.reset(getParameters());
++ 
++ 	refStack_.push(std::make_pair(act_, prevPara));
++--- a/src/bulletmlrunnerimpl.h
+++++ b/src/bulletmlrunnerimpl.h
++@@ -6,7 +6,7 @@
++ #include <vector>
++ #include <memory>
++ #include <stack>
++-#include <boost/smart_ptr.hpp>
+++#include <tr1/memory>
++ 
++ class BulletMLRunner;
++ class BulletMLState;
++@@ -149,7 +149,7 @@
++     Validatable<double> spd_, dir_, prevSpd_, prevDir_;
++ 
++     typedef BulletMLParameter Parameters;
++-    boost::shared_ptr<Parameters> parameters_;
+++    std::tr1::shared_ptr<Parameters> parameters_;
++ 
++ protected:
++     BulletMLParser* bulletml_;
++@@ -171,7 +171,7 @@
++     typedef std::stack<RepeatElem*> RepeatStack;
++     RepeatStack repeatStack_;
++     typedef std::stack<std::pair<BulletMLNode*,
++-								 boost::shared_ptr<Parameters> > > RefStack;
+++								 std::tr1::shared_ptr<Parameters> > > RefStack;
++     RefStack refStack_;
++ 
++     typedef void (BulletMLRunnerImpl::*Method)();
+--- bulletml-0.0.6.orig/debian/patches/fixes.patch
++++ bulletml-0.0.6/debian/patches/fixes.patch
+@@ -0,0 +1,237 @@
++# Copyright (C) 2007  Marcel Unbehaun <frostworks@gmx.de>
++# Distributed under the same license as the original software. See debian/copyright.
++
++Index: bulletml-0.0.6/src/bulletmlparser.h
++===================================================================
++--- bulletml-0.0.6.orig/src/bulletmlparser.h	2007-08-28 11:41:02.000000000 +0000
+++++ bulletml-0.0.6/src/bulletmlparser.h	2007-08-28 11:43:23.000000000 +0000
++@@ -70,11 +70,10 @@
++     bool isHorizontal_;
++ 
++ protected:
++-	/// 一時的な導入
++-	void setName(const std::string& name) { name_ = name; }
++-	std::string name_;
+++	void setName(const char* name) { name_ = name; }
+++	const char* name_;
++ public:
++-	DECLSPEC const std::string& getName() const { return name_; }
+++	DECLSPEC const char* getName() const { return name_; }
++ 
++ };
++ 
++Index: bulletml-0.0.6/src/bulletmlparser-tinyxml.cpp
++===================================================================
++--- bulletml-0.0.6.orig/src/bulletmlparser-tinyxml.cpp	2007-08-28 11:41:02.000000000 +0000
+++++ bulletml-0.0.6/src/bulletmlparser-tinyxml.cpp	2007-08-28 11:43:23.000000000 +0000
++@@ -5,8 +5,8 @@
++ 
++ #include <string>
++ 
++-BulletMLParserTinyXML::BulletMLParserTinyXML(const std::string& filename)
++-    : xmlFile_(filename), curNode_(0)
+++BulletMLParserTinyXML::BulletMLParserTinyXML(const char* filename)
+++    : curNode_(0)
++ {
++ 	setName(filename);
++ }
++@@ -71,7 +71,7 @@
++ }
++ 
++ void BulletMLParserTinyXML::parse() {
++-    TiXmlDocument doc(xmlFile_.c_str());
+++    TiXmlDocument doc(name_);
++     doc.LoadFile();
++ 	parseImpl(doc);
++ }
++Index: bulletml-0.0.6/src/bulletmlparser-tinyxml.h
++===================================================================
++--- bulletml-0.0.6.orig/src/bulletmlparser-tinyxml.h	2007-08-28 11:41:02.000000000 +0000
+++++ bulletml-0.0.6/src/bulletmlparser-tinyxml.h	2007-08-28 11:43:23.000000000 +0000
++@@ -16,12 +16,12 @@
++ 
++ class BulletMLParserTinyXML : public BulletMLParser {
++ public:
++-    DECLSPEC BulletMLParserTinyXML(const std::string& filename);
+++    DECLSPEC BulletMLParserTinyXML(const char* filename);
++     DECLSPEC virtual ~BulletMLParserTinyXML();
++ 
++     DECLSPEC virtual void parse();
++ 
++-protected:
+++private:
++ 	void parseImpl(TiXmlDocument& doc);
++ 
++ protected:
++@@ -29,7 +29,6 @@
++     void translateNode(TiXmlNode* node);
++ 
++ private:
++-    std::string xmlFile_;
++     BulletMLNode* curNode_;
++ };
++ 
++Index: bulletml-0.0.6/src/bulletmlparser-xerces.cpp
++===================================================================
++--- bulletml-0.0.6.orig/src/bulletmlparser-xerces.cpp	2007-08-28 11:41:02.000000000 +0000
+++++ bulletml-0.0.6/src/bulletmlparser-xerces.cpp	2007-08-28 11:43:23.000000000 +0000
++@@ -19,9 +19,9 @@
++ 	BulletMLParserXercesSAXHandler(BulletMLParserXerces* parser);
++ 
++ 	virtual void characters(const XMLCh* const chars,
++-											  const unsigned int length);
+++							const unsigned int length);
++ 	virtual void startElement(const XMLCh* const name,
++-												AttributeList& attributes);
+++							  AttributeList& attributes);
++ 	virtual void endElement(const XMLCh* const name);
++ 
++ 	virtual void error(const SAXParseException& e) {
++@@ -94,8 +94,7 @@
++ 	curNode_ = curNode_->getParent();
++ }
++ 
++-BulletMLParserXerces::BulletMLParserXerces(const std::string& filename)
++-    : xmlFile_(filename)
+++BulletMLParserXerces::BulletMLParserXerces(const char* filename)
++ {
++ 	setName(filename);
++ }
++@@ -117,7 +116,7 @@
++ 		parser->setDocumentHandler(&handler);
++ 		parser->setErrorHandler(&handler);
++ 
++-		parser->parse(xmlFile_.c_str());
+++		parser->parse(name_);
++ 
++ 		parser.reset(0);
++ 	}
++Index: bulletml-0.0.6/src/bulletmlparser-xerces.h
++===================================================================
++--- bulletml-0.0.6.orig/src/bulletmlparser-xerces.h	2007-08-28 11:41:02.000000000 +0000
+++++ bulletml-0.0.6/src/bulletmlparser-xerces.h	2007-08-28 11:43:23.000000000 +0000
++@@ -8,18 +8,14 @@
++ 
++ #ifdef USE_XERCES
++ 
++-#include <string>
++-
++ class BulletMLParserXerces : public BulletMLParser {
++ public:
++-    explicit BulletMLParserXerces(const std::string& filename);
+++    explicit BulletMLParserXerces(const char* filename);
++     virtual ~BulletMLParserXerces();
++ 
++     virtual void parse();
++ 
++ private:
++-    std::string xmlFile_;
++-
++ 	friend class BulletMLParserXercesSAXHandler;
++ };
++ 
++Index: bulletml-0.0.6/src/bulletmlparser-ygg.cpp
++===================================================================
++--- bulletml-0.0.6.orig/src/bulletmlparser-ygg.cpp	2007-08-28 11:41:01.000000000 +0000
+++++ bulletml-0.0.6/src/bulletmlparser-ygg.cpp	2007-08-28 11:43:23.000000000 +0000
++@@ -63,8 +63,8 @@
++ 	curNode_->setValue(trimString(text.get_text()));
++ }
++ 
++-BulletMLParserYggdrasil::BulletMLParserYggdrasil(const std::string& filename)
++-    : xmlFile_(filename), curNode_(0)
+++BulletMLParserYggdrasil::BulletMLParserYggdrasil(const char* filename)
+++    : curNode_(0)
++ {
++ 	setName(filename);
++ }
++@@ -72,7 +72,8 @@
++ BulletMLParserYggdrasil::~BulletMLParserYggdrasil() {}
++ 
++ void BulletMLParserYggdrasil::parse() {
++-	sox_file(xmlFile_).read(this);
+++	std::string f(name_);
+++	sox_file(f).read(this);
++ }
++ 
++ std::string BulletMLParserYggdrasil::trimString(const std::string& str) {
++Index: bulletml-0.0.6/src/bulletmlparser-ygg.h
++===================================================================
++--- bulletml-0.0.6.orig/src/bulletmlparser-ygg.h	2007-08-28 11:41:02.000000000 +0000
+++++ bulletml-0.0.6/src/bulletmlparser-ygg.h	2007-08-28 11:43:23.000000000 +0000
++@@ -24,7 +24,7 @@
++ 	void catch_text(yggdrasil::ygg_node text);
++ 
++ public:
++-    DECLSPEC explicit BulletMLParserYggdrasil(const std::string& filename);
+++    DECLSPEC explicit BulletMLParserYggdrasil(const char* filename);
++     DECLSPEC virtual ~BulletMLParserYggdrasil();
++ 
++     DECLSPEC virtual void parse();
++@@ -33,7 +33,6 @@
++ 	std::string trimString(const std::string& str);
++ 
++ private:
++-    std::string xmlFile_;
++     class BulletMLNode* curNode_;
++ };
++ 
++Index: bulletml-0.0.6/src/bulletmlrunnerimpl.cpp
++===================================================================
++--- bulletml-0.0.6.orig/src/bulletmlrunnerimpl.cpp	2007-08-28 11:41:02.000000000 +0000
+++++ bulletml-0.0.6/src/bulletmlrunnerimpl.cpp	2007-08-28 11:43:41.000000000 +0000
++@@ -25,8 +25,7 @@
++ 	&BulletMLRunnerImpl::runVanish
++ };
++ 
++-double BulletMLRunnerImpl::getDirection(BulletMLNode* dirNode,
++-                                        bool prevChange) {
+++double BulletMLRunnerImpl::getDirection(BulletMLNode* dirNode) {
++     double dir;
++ 
++     bool isDefault = true;
++@@ -64,7 +63,7 @@
++     while (dir > 360) dir -= 360;
++     while (dir < 0) dir += 360;
++ 
++-    if (prevChange) prevDir_ = dir;
+++    prevDir_ = dir;
++ 
++     return dir;
++ }
++@@ -119,12 +118,7 @@
++ 	act_ = node_[0];
++ }
++ 
++-BulletMLRunnerImpl::~BulletMLRunnerImpl() {
++-	while (!repeatStack_.empty()) {
++-		delete repeatStack_.top();
++-		repeatStack_.pop();
++-	}
++-}
+++BulletMLRunnerImpl::~BulletMLRunnerImpl() {}
++ 
++ double BulletMLRunnerImpl::getNumberContents(const BulletMLNode* node) {
++     assert(node);
++@@ -404,7 +398,7 @@
++ 	BulletMLNode::Type type = dirNode->getType();
++ 
++ 	double dir;
++-	if (type != BulletMLNode::sequence) dir = getDirection(dirNode, false);
+++	if (type != BulletMLNode::sequence) dir = getDirection(dirNode);
++ 	else dir = getNumberContents(dirNode);
++ 
++ 	calcChangeDirection(dir, term, type == BulletMLNode::sequence);
++Index: bulletml-0.0.6/src/bulletmlrunnerimpl.h
++===================================================================
++--- bulletml-0.0.6.orig/src/bulletmlrunnerimpl.h	2007-08-28 11:41:02.000000000 +0000
+++++ bulletml-0.0.6/src/bulletmlrunnerimpl.h	2007-08-28 11:43:23.000000000 +0000
++@@ -136,7 +136,7 @@
++     double getNumberContents(const BulletMLNode* node);
++     std::vector<double>* getParameters();
++     double getSpeed(BulletMLNode* spdNode);
++-	double getDirection(BulletMLNode* dirNode, bool prevChange = true);
+++    double getDirection(BulletMLNode* dirNode);
++ 
++ private:
++ private:
