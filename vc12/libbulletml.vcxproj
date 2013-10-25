@@ -106,7 +106,7 @@
       <Culture>0x0411</Culture>
     </ResourceCompile>
     <Lib>
-      <OutputFile>.\Release\libbulletml.lib</OutputFile>
+      <OutputFile>..\lib\$(TargetName)$(TargetExt)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
     <Bscmake>
